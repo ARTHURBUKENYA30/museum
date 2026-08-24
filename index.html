@@ -184,6 +184,9 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
  .footer-grid,.team-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item{height:160px}
  .visit-box{padding:30px 22px}.cta{padding:30px 22px}
 }
+
+    .verbatim-source{background:var(--white);border:1px solid var(--line);border-left:5px solid var(--red);padding:24px;border-radius:var(--radius);overflow:auto;white-space:pre-wrap;font:14px/1.75 Arial,Helvetica,sans-serif;color:var(--black);box-shadow:var(--shadow)}
+    .verbatim-source-title{margin-top:20px;font-weight:800;color:var(--green-deep)}
 </style>
 </head>
 <body>
@@ -212,7 +215,7 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
     <button class="menu" id="menu" aria-label="Open menu">☰</button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
-      <li><a href="#history">History</a></li>
+      <li><a href="#history">History</a></li><li><a href="#source-record">Full Source</a></li>
       <li><a href="#printing-history">Printing History</a></li>
       <li><a href="#collection">Collection</a></li>
       <li><a href="#digital">Digital Archive</a></li>
@@ -299,20 +302,21 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
   <div class="container">
     <div class="history-head">
       <div><div class="eyebrow">Historical Journey</div><h2 class="section-title">Government Printer → UPPC</h2></div>
-      <p class="section-intro" style="margin:0;max-width:560px">A historical timeline of the Uganda Government Printer, later transformed into the Uganda Printing and Publishing Corporation (UPPC).</p>
+      <p class="section-intro" style="margin:0;max-width:560px">A historical timeline of the Uganda Government Printer, later transformed into the Uganda Printing and Publishing Corporation (UPPC):</p>
     </div>
     <div class="timeline">
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1902</div><h3>Establishment of the Government Printer</h3><p>Established in Entebbe under the British Protectorate. Its mandate was to produce the Uganda Gazette, laws, ordinances, and official notices.</p><span class="tag">Colonial Era Foundations</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1920s–1950s</div><h3>Administrative Expansion</h3><p>The Government Printer expanded to handle administrative publications, annual reports, and colonial records.</p><span class="tag">Colonial Administration</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1962</div><h3>Independence &amp; Transition</h3><p>Uganda attained independence; the Government Printer continued as the official state printer, producing parliamentary acts, gazettes, and government communications.</p><span class="tag">Independence</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1967</div><h3>Republican Constitution</h3><p>Under the new republican constitution, the Government Printer became central to disseminating decrees and laws.</p><span class="tag">Institutional Role</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1970s</div><h3>Official Publications During Political Upheaval</h3><p>Despite political upheaval under Idi Amin, the Government Printer remained the sole authority for official publications, including decrees and propaganda.</p><span class="tag">Public Information</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1992</div><h3>UPPC Corporation</h3><p>The UPPC Act formally transformed the Government Printer into the Uganda Printing and Publishing Corporation (UPPC), granting it corporate status while retaining its mandate as the official government printer.</p><span class="tag">Institutional Transformation</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1990s–2000s</div><h3>Commercial Expansion</h3><p>UPPC expanded into commercial printing but faced competition from private presses, notably Nasser Road in Kampala.</p><span class="tag">Modernization &amp; Challenges</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2010s</div><h3>Digital Workflows</h3><p>UPPC began modernization efforts, including digital workflows, but struggled with funding and equipment upgrades.</p><span class="tag">Digital Transformation</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2020s</div><h3>Secure Printing &amp; Partnerships</h3><p>UPPC rebranded and emphasized its role in secure printing, including ballot papers, exams and permits, while exploring partnerships with educational and archival institutions.</p><span class="tag">Modern Era</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1902</div><h3>Establishment of the Government Printer in Entebbe under the British Protectorate</h3><p>Its mandate was to produce the Uganda Gazette, laws, ordinances, and official notices.</p><span class="tag">Colonial Era Foundations</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1920s–1950s</div><h3>Administrative Publications</h3><p>The Government Printer expanded to handle administrative publications, annual reports, and colonial records.</p><span class="tag">Colonial Era Foundations</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1962</div><h3>Independence &amp; Transition</h3><p>Uganda attained independence; the Government Printer continued as the official state printer, producing parliamentary acts, gazettes, and government communications.</p><span class="tag">Independence &amp; Transition</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1967</div><h3>New Republican Constitution</h3><p>Under the new republican constitution, the Government Printer became central to disseminating decrees and laws.</p><span class="tag">Independence &amp; Transition</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1970s</div><h3>Institutional Transformation</h3><p>Despite political upheaval under Idi Amin, the Government Printer remained the sole authority for official publications, including decrees and propaganda.</p><span class="tag">Institutional Transformation</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1992</div><h3>UPPC Act</h3><p>The UPPC Act formally transformed the Government Printer into the Uganda Printing and Publishing Corporation (UPPC), granting it corporate status while retaining its mandate as the official government printer.</p><span class="tag">Institutional Transformation</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1990s–2000s</div><h3>Commercial Printing</h3><p>UPPC expanded into commercial printing but faced competition from private presses (notably Nasser Road in Kampala).</p><span class="tag">Modernization &amp; Challenges</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2010s</div><h3>Modernization Efforts</h3><p>UPPC began modernization efforts, including digital workflows, but struggled with funding and equipment upgrades.</p><span class="tag">Modernization &amp; Challenges</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2020s</div><h3>Secure Printing &amp; Partnerships</h3><p>UPPC rebranded and emphasized its role in secure printing (ballot papers, exams, permits) while exploring partnerships with educational and archival institutions.</p><span class="tag">Modernization &amp; Challenges</span></div>
     </div>
-    <div class="note"><strong>Key Takeaway:</strong> The Government Printer, founded in 1902, evolved into UPPC in 1992. It remains Uganda’s official state printer, balancing its statutory role with modernization and competition from private presses.</div>
+    <div class="info-card" style="margin-top:25px"><h3>📊 Summary Table</h3><div class="table-wrap"><table class="strategy-table"><thead><tr><th>Period</th><th>Institution</th><th>Key Role</th></tr></thead><tbody><tr><td>1902–1962</td><td>Government Printer</td><td>Colonial gazettes, laws, reports</td></tr><tr><td>1962–1992</td><td>Government Printer</td><td>Independence-era official publications</td></tr><tr><td>1992–Present</td><td>UPPC</td><td>Official government printer, secure documents, modernization</td></tr></tbody></table></div></div>
+    <div class="note" style="margin-top:20px"><strong>✅ Key Takeaway:</strong> The Government Printer, founded in 1902, evolved into UPPC in 1992. It remains Uganda’s official state printer, balancing its statutory role with modernization and competition from private presses.</div>
   </div>
 </section>
 
@@ -344,73 +348,74 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
 
 <section class="section paper-bg" id="machines">
   <div class="container">
-    <div class="center"><div class="eyebrow">Historical Machines</div><h2 class="section-title">Machines That Made the Page</h2><p class="section-intro center">Collection documentation on historical printing machines and equipment associated with UPPC. The supplied notes estimate the use of these machines at UPPC from the 1920s.</p></div>
+    <div class="center"><div class="eyebrow">Historical Machines</div><h2 class="section-title">Machines That Made the Page</h2><p class="section-intro center">about machines</p></div>
     <div class="process">
-      <article class="process-card"><div class="era">Manufactured 1912–1976</div><h3>Intertype</h3><p>Mostly used during the budgeting period because of its speed.</p></article>
-      <article class="process-card"><div class="era">Commercial system from 1900</div><h3>Monotype</h3><p>Used mostly in printing books. Tolbert Lanston invented the system; the commercial hot-metal system combined a keyboard and casting machine.</p></article>
-      <article class="process-card"><div class="era">Production continued into the late 20th century</div><h3>Monotype Caster</h3><p>Mostly used for finance bills containing many figures. The system used a perforated paper-tape keyboard and an automatic hot-metal caster.</p></article>
-      <article class="process-card"><div class="era">Image transfer &amp; processing</div><h3>Camera</h3><p>Majorly used for image transfer and processing as part of pre-press and reproduction workflows.</p></article>
-      <article class="process-card"><div class="era">Manufactured from 1912</div><h3>Ludlow Photograph Machine / Typograph</h3><p>Designed to type big letters suitable for posters, letterheads, IDs and other display work. Commercial production began in the early 1910s.</p></article>
-      <article class="process-card"><div class="era">Mid-1920s–1950s</div><h3>Vicobold</h3><p>Used for relief printing, embossing, debossing and foil stamping. The supplied notes associate the presses with Rockstroh-Werke AG and licensed UK manufacture.</p></article>
-      <article class="process-card"><div class="era">Type &amp; composition</div><h3>Letter Blocks</h3><p>Majorly divided into two types: single blocks and slugs, cast by the Monotype and Intertype machines respectively.</p></article>
-      <article class="process-card"><div class="era">Estimated UPPC use</div><h3>Machine Heritage</h3><p>The supplied notes estimate the use of these machines at UPPC from the 1920s.</p></article>
-      <article class="process-card"><div class="era">Preservation</div><h3>Document Every Machine</h3><p>Each machine should be documented with photographs, manufacturer details, dates, function, operators, maintenance history and oral testimony where available.</p></article>
+      <article class="process-card"><div class="era">1912–1976</div><h3>INTERTYPE</h3><p>was mostly used during the budgeting period because of its speed.</p><p>manufactured between 1912 and 1976</p></article>
+      <article class="process-card"><div class="era">Commercial hot-metal system from 1900</div><h3>MONOTYPE</h3><p>Was used mostly in printing of books.</p><p>The first Monotype typesetting machine was invented by American engineer Tolbert Lanston, who patented his initial mechanical typesetting device in 1887. The commercial hot-metal system, featuring the keyboard and the casting machine, was brought to market in 1900</p></article>
+      <article class="process-card"><div class="era">1900–late 1960s; last Caster manufactured in 1989</div><h3>MONOTYPE-CASTER</h3><p>Was mostly used during finance bill which had lots of figures.</p><p>Between 1900 and the late 1960s. Tolbert Lanston’s Monotype system—consisting of a perforated paper-tape Keyboard and an automatic hot-metal Caster—was first brought to commercial market in 1900. Production of these machines steadily continued until the last Caster was manufactured in Surrey, England, in 1989</p></article>
+      <article class="process-card"><div class="era">Image transfer and processing</div><h3>CAMERA</h3><p>Was majorly used for image transfer and processing.</p></article>
+      <article class="process-card"><div class="era">Manufactured starting in 1912</div><h3>LUDLOW PHOTOGRAPH MACHINE</h3><p>It was designed to type big letters suitable for posters, letterheads, IDs etc</p><p>The Ludlow Typograph was manufactured starting in 1912. First developed commercially in 1911, the hot metal typesetting machine was invented by William I. Ludlow and William A. Reade. Commercial production began in Chicago, and the machine found its way into printing plants around 1913 to 1914</p></article>
+      <article class="process-card"><div class="era">Mid-1920s through the 1950s</div><h3>VICOBOLD</h3><p>It was used to for relief printing, embossing, debossing, and foil stamping.</p><p>Was manufactured from the mid-1920s through the 1950s. The presses were originally designed and built in Germany by Rockstroh-Werke AG around 1925, and were later manufactured under license in the UK by Frank F. Pershke</p></article>
+      <article class="process-card"><div class="era">Estimated UPPC use from the 1920s</div><h3>Letter blocks</h3><p>LETTER BLOCKS: they are majorly into two types i.e single block and the Slag which are casted by the monotype machine and intertype machine respectively.</p><p>NB. The use of these machines at UPPC is estimated to be from 1920s</p></article>
     </div>
   </div>
 </section>
 
 <section class="section" id="machine-benefits">
   <div class="container">
-    <div class="center"><div class="eyebrow">Why Preserve Them?</div><h2 class="section-title">Benefits of Preserving Old Printing Machines</h2><p class="section-intro center">The machines are tangible evidence of Uganda’s publishing and printing heritage and can support education, tourism, research and institutional memory.</p></div>
+    <div class="center"><div class="eyebrow">Why Preserve Them?</div><h2 class="section-title">Benefits of Preserving Old Printing Machines</h2></div>
     <div class="cards">
-      <article class="card"><div class="card-body"><span class="tag">01</span><h3>Historical Preservation</h3><p>Safeguards Uganda’s publishing and printing heritage; provides tangible evidence of technological evolution; ensures future generations can see and understand the tools that shaped communication.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">02</span><h3>Educational Value</h3><p>Offers hands-on learning for students, researchers and staff; demonstrates printing mechanics before digital technology; supports curriculum development in history, media studies and technical training.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">03</span><h3>Cultural Identity &amp; Pride</h3><p>Showcases Uganda’s journey in publishing and knowledge dissemination, strengthens national pride and acts as a cultural landmark for visitors and scholars.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">04</span><h3>Innovation Inspiration</h3><p>Old machines highlight problem-solving and craftsmanship, spark creativity and encourage staff and visitors to think about how technology evolves.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">05</span><h3>Tourism &amp; Public Engagement</h3><p>Attracts local and international visitors and creates opportunities for guided tours, exhibitions and interactive displays while generating revenue and visibility through museum activities.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">06</span><h3>Institutional Legacy</h3><p>Positions UPPC as custodian of Uganda’s publishing heritage, reinforces its role in knowledge preservation and dissemination, and builds credibility with donors and educational institutions.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">07</span><h3>Research &amp; Documentation</h3><p>Provides primary sources for academic research, enables comparisons between traditional and modern printing, and supports archiving projects and scholarly publications.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">1</span><h3>Historical Preservation</h3><ul><li>Safeguards Uganda’s publishing and printing heritage.</li><li>Provides tangible evidence of technological evolution.</li><li>Ensures future generations can see and understand the tools that shaped communication.</li></ul></div></article>
+      <article class="card"><div class="card-body"><span class="tag">2</span><h3>Educational Value</h3><ul><li>Offers hands-on learning for students, researchers, and staff.</li><li>Demonstrates the mechanics of printing before digital technology.</li><li>Supports curriculum development in history, media studies, and technical training.</li></ul></div></article>
+      <article class="card"><div class="card-body"><span class="tag">3</span><h3>Cultural Identity &amp; Pride</h3><ul><li>Showcases Uganda’s journey in publishing and knowledge dissemination.</li><li>Strengthens national pride by connecting modern publishing to its roots.</li><li>Acts as a cultural landmark for visitors and scholars.</li></ul></div></article>
+      <article class="card"><div class="card-body"><span class="tag">4</span><h3>Innovation Inspiration</h3><ul><li>Old machines highlight problem-solving and craftsmanship of past eras.</li><li>Sparks creativity by showing how limitations led to breakthroughs.</li><li>Encourages staff and visitors to think about how technology evolves.</li></ul></div></article>
+      <article class="card"><div class="card-body"><span class="tag">5</span><h3>Tourism &amp; Public Engagement</h3><ul><li>Attracts local and international visitors.</li><li>Creates opportunities for guided tours, exhibitions, and interactive displays.</li><li>Generates revenue and visibility for UPPC through museum activities.</li></ul></div></article>
+      <article class="card"><div class="card-body"><span class="tag">6</span><h3>Institutional Legacy</h3><ul><li>Positions UPPC as custodian of Uganda’s publishing heritage.</li><li>Reinforces UPPC’s role in knowledge preservation and dissemination.</li><li>Builds credibility with donors, partners, and educational institutions.</li></ul></div></article>
+      <article class="card"><div class="card-body"><span class="tag">7</span><h3>Research &amp; Documentation</h3><ul><li>Provides primary sources for academic research.</li><li>Enables comparative studies between traditional and modern printing.</li><li>Supports archiving projects and scholarly publications.</li></ul></div></article>
     </div>
   </div>
 </section>
 
 <section class="section cream" id="printing-history">
   <div class="container">
-    <div class="center"><div class="eyebrow">National History</div><h2 class="section-title">Historical Timeline of Printing &amp; Publishing in Uganda</h2><p class="section-intro center">A broader timeline connecting Uganda’s printing and publishing development with political, economic and technological transitions.</p></div>
+    <div class="center"><div class="eyebrow">National History</div><h2 class="section-title">Historical Timeline of Printing &amp; Publishing in Uganda</h2></div>
     <div class="timeline">
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1894</div><h3>Uganda Declared a British Protectorate</h3><p>Printing was introduced mainly for administrative purposes.</p><span class="tag">Colonial Foundations</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1903</div><h3>Government Printer Established</h3><p>The Government Printer was established and later formalized as UPPC, becoming the official printer for government gazettes, laws and notices.</p><span class="tag">Official Printing</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1920s–1950s</div><h3>Missionary Presses Expand</h3><p>Protestant and Catholic presses produced religious texts, educational materials and early vernacular publications.</p><span class="tag">Missionary Publishing</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1954</div><h3>Industrial Capacity</h3><p>Hydroelectric power at Owen Falls Dam boosted industrial capacity, including printing.</p><span class="tag">Industrial Growth</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1962–1980s</div><h3>Independence &amp; Institutional Growth</h3><p>UPPC continued as the official government printer while educational publishing, newspapers and political materials expanded.</p><span class="tag">Independence</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1970s</div><h3>Official Decrees &amp; Propaganda</h3><p>Idi Amin’s regime relied heavily on UPPC for official decrees and propaganda.</p><span class="tag">Public Information</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1980s–2000s</div><h3>Liberalization &amp; Private Sector</h3><p>Private printing firms grew, especially on Nasser Road in Kampala, which became Uganda’s printing hub.</p><span class="tag">Private Presses</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1992</div><h3>UPPC Act</h3><p>The UPPC Act reaffirmed UPPC as the official government printer, responsible for sensitive documents such as ballot papers, exams and permits.</p><span class="tag">UPPC</span></div>
-      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1990s–Present</div><h3>Modern &amp; Digital Era</h3><p>Offset and digital printing expanded; digital publishing, photocopy bureaus and small-scale presses diversified the industry. UPPC pursued modernization while private presses and digital publishing grew rapidly.</p><span class="tag">Modern Era</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1894</div><h3>Uganda declared a British Protectorate</h3><p>Printing introduced mainly for administrative purposes.</p><span class="tag">Colonial Foundations (1894–1962)</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1903</div><h3>Establishment of the Government Printer</h3><p>Establishment of the Government Printer, later formalized as the Uganda Printing and Publishing Corporation (UPPC). It became the official printer for government gazettes, laws, and notices.</p><span class="tag">Colonial Foundations</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1920s–1950s</div><h3>Missionary presses</h3><p>Missionary presses (Protestant and Catholic) produced religious texts, educational materials, and early vernacular publications.</p><span class="tag">Colonial Foundations</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1954</div><h3>Hydroelectric power at Owen Falls Dam</h3><p>Hydroelectric power at Owen Falls Dam boosted industrial capacity, including printing.</p><span class="tag">Colonial Foundations</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1962</div><h3>Independence &amp; Institutional Growth</h3><p>Uganda gains independence; UPPC continues as the official government printer.</p><span class="tag">Independence &amp; Institutional Growth (1962–1980s)</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1960s–1970s</div><h3>Expansion of educational publishing</h3><p>Expansion of educational publishing, newspapers, and political materials.</p><span class="tag">Independence &amp; Institutional Growth</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1970s</div><h3>Idi Amin’s regime</h3><p>Idi Amin’s regime relied heavily on UPPC for official decrees and propaganda.</p><span class="tag">Independence &amp; Institutional Growth</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1980s–1990s</div><h3>Growth of private printing firms</h3><p>Growth of private printing firms, especially on Nasser Road in Kampala, which became Uganda’s printing hub.</p><span class="tag">Liberalization &amp; Private Sector Expansion (1980s–2000s)</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1992</div><h3>UPPC Act reaffirmed UPPC</h3><p>UPPC Act reaffirmed UPPC as the official government printer, responsible for sensitive documents (ballot papers, exams, permits).</p><span class="tag">Liberalization &amp; Private Sector Expansion</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1990s</div><h3>Modern offset presses</h3><p>Introduction of modern offset presses and limited digital printing.</p><span class="tag">Liberalization &amp; Private Sector Expansion</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2000s</div><h3>Rise of digital publishing</h3><p>Rise of digital publishing, photocopy bureaus, and small-scale presses serving education, NGOs, and SMEs.</p><span class="tag">Modern Era (2000s–Present)</span></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2010s</div><h3>UPPC rebranding and modernization</h3><p>UPPC struggles with funding and outdated equipment but begins rebranding and modernization efforts.</p><span class="tag">Modern Era</span></div>
     </div>
-    <div class="info-card" style="margin-top:25px">
-      <h3>Present Day — Printing in Uganda is a Dual System</h3>
-      <ul>
-        <li><strong>UPPC:</strong> Official government printer for gazettes and secure documents.</li>
-        <li><strong>Private presses (Nasser Road):</strong> Dominant in commercial printing, books, flyers and branding.</li>
-        <li><strong>Digital publishing:</strong> Growing rapidly, especially in education and media sectors.</li>
-      </ul>
-    </div>
+    <div class="info-card" style="margin-top:25px"><h3>Present Day – Printing in Uganda is a dual system:</h3><ul>
+      <li><strong>UPPC:</strong> Official government printer for gazettes, and secure documents. New Vision is also a popular government owned printing and publishing company</li>
+      <li><strong>Private presses (Nasser Road):</strong> Dominant in commercial printing, books, flyers, and branding.</li>
+      <li><strong>Digital publishing:</strong> Growing rapidly, especially in education and media sectors.</li>
+    </ul></div>
+    <div class="info-card" style="margin-top:25px"><h3>📊 Summary Table</h3><div class="table-wrap"><table class="strategy-table"><thead><tr><th>Period</th><th>Key Development</th><th>Impact</th></tr></thead><tbody><tr><td>Colonial (1903–1962)</td><td>UPPC founded, missionary presses</td><td>Government gazettes, religious texts</td></tr><tr><td>Independence (1962–1980s)</td><td>UPPC central role</td><td>Official decrees, education materials</td></tr><tr><td>Liberalization (1980s–2000s)</td><td>Nasser Road private presses</td><td>Commercial printing boom</td></tr><tr><td>Modern Era (2000s–Present)</td><td>Digital publishing, UPPC reforms</td><td>Diversified industry, modernization</td></tr></tbody></table></div></div>
+    <div class="note" style="margin-top:20px"><strong>✅ Key Takeaway:</strong> Uganda’s printing and publishing history reflects its political and economic transitions — from colonial administration to independence, liberalization, and today’s mix of government and private sector printing.</div>
   </div>
 </section>
 
 <section class="section paper-bg" id="machine-history">
   <div class="container">
-    <div class="center"><div class="eyebrow">Global Print Technology</div><h2 class="section-title">Historical Timeline of Printing &amp; Publishing Machines</h2><p class="section-intro center">From the first recorded impressions to digital and AI-connected printing.</p></div>
+    <div class="center"><div class="eyebrow">Global Print Technology</div><h2 class="section-title">Historical Timeline of Printing &amp; Publishing Machines</h2></div>
     <div class="process">
-      <article class="process-card"><div class="era">3100 BCE–3000 BCE</div><h3>Ancient Foundations</h3><p>Cuneiform tablets in Sumer used wedge-shaped marks on clay; cylinder seals in Mesopotamia imprinted designs on clay.</p></article>
-      <article class="process-card"><div class="era">868–1377 CE</div><h3>Early Movable Type</h3><p>The Diamond Sutra in China is identified as the earliest dated printed book using woodblock printing. Bi Sheng invented movable type using baked clay, and Jikji is the oldest surviving book printed with movable metal type.</p></article>
-      <article class="process-card"><div class="era">1438–1455 CE</div><h3>Gutenberg Revolution</h3><p>Johannes Gutenberg developed an adjustable type mold in Mainz; the Gutenberg Bible became a major European movable-type publication and helped spark mass publishing.</p></article>
-      <article class="process-card"><div class="era">1814–1875 CE</div><h3>Industrial Advancements</h3><p>Steam-powered and rotary presses transformed newspaper production and circulation, while offset printing was developed and later perfected.</p></article>
-      <article class="process-card"><div class="era">1907–1970s</div><h3>20th Century Innovations</h3><p>Screen printing expanded applications; phototypesetting replaced hot metal typesetting; laser printing combined digital input with high-speed output.</p></article>
-      <article class="process-card"><div class="era">1990s–Present</div><h3>Digital &amp; Modern Era</h3><p>Digital presses enabled short-run and on-demand publishing; 3D printing expanded the concept beyond paper; AI-driven and cloud-connected presses now integrate automation, predictive maintenance and personalized publishing.</p></article>
+      <article class="process-card"><div class="era">Ancient Foundations</div><h3>3100 BCE – Cuneiform tablets in Sumer</h3><p>wedge-shaped marks on clay using stylus.</p><p>3000 BCE – Cylinder seals in Mesopotamia used to imprint designs on clay.</p><p>868 CE – Diamond Sutra in China: earliest dated printed book using woodblock printing.</p></article>
+      <article class="process-card"><div class="era">Early Movable Type</div><h3>1041 CE – Bi Sheng</h3><p>Bi Sheng (China) invents movable type using baked clay.</p><p>1377 CE – Jikji (Korea): oldest surviving book printed with movable metal type.</p></article>
+      <article class="process-card"><div class="era">Gutenberg Revolution</div><h3>1438–1444 CE – Johannes Gutenberg</h3><p>Johannes Gutenberg develops adjustable type mold in Mainz, Germany.</p><p>1455 CE – Gutenberg Bible: first major book printed in Europe with movable type, sparking mass publishing.</p></article>
+      <article class="process-card"><div class="era">Industrial Advancements</div><h3>1814–1875 CE</h3><p>1814 CE – Steam-powered press by Friedrich Koenig: prints 1,100 sheets/hour, revolutionizing newspaper production.</p><p>1843 CE – Rotary press by Richard Hoe: continuous roll printing, enabling mass circulation.</p><p>1875 CE – Offset printing developed in England, later perfected in the U.S.</p></article>
+      <article class="process-card"><div class="era">20th Century Innovations</div><h3>1907–1970s CE</h3><p>1907 CE – Screen printing patented, expanding into textiles and posters.</p><p>1950s CE – Phototypesetting replaces hot metal typesetting, improving speed and flexibility.</p><p>1970s CE – Laser printing introduced by Xerox, combining digital input with high-speed output.</p></article>
+      <article class="process-card"><div class="era">Digital &amp; Modern Era</div><h3>1990s–Present Day</h3><p>1990s CE – Digital printing presses (e.g., Indigo, Xerox DocuTech) allow short-run, on-demand publishing.</p><p>2000s CE – 3D printing emerges, expanding the concept of “printing” beyond paper to physical objects.</p><p>Present Day – AI-driven and cloud-connected presses integrate automation, predictive maintenance, and personalized publishing.</p></article>
     </div>
-    <div class="note"><strong>Key Takeaway:</strong> The printing press remains one of humanity’s most transformative inventions, enabling literacy, science and democracy. Digital and AI-powered presses continue that legacy through speed, customization and sustainability.</div>
+    <div class="info-card" style="margin-top:25px"><h3>📊 Summary Table</h3><div class="table-wrap"><table class="strategy-table"><thead><tr><th>Era</th><th>Key Machine/Method</th><th>Impact</th></tr></thead><tbody><tr><td>Ancient</td><td>Cuneiform, Cylinder seals</td><td>First recorded printing impressions</td></tr><tr><td>Medieval Asia</td><td>Woodblock, Movable type</td><td>Mass book production in China/Korea</td></tr><tr><td>Renaissance</td><td>Gutenberg Press</td><td>Birth of modern publishing</td></tr><tr><td>Industrial Age</td><td>Steam &amp; Rotary Presses</td><td>Mass newspapers, affordable books</td></tr><tr><td>20th Century</td><td>Offset, Screen, Laser</td><td>High-quality, fast, versatile printing</td></tr><tr><td>Digital Era</td><td>Digital &amp; 3D Printing</td><td>On-demand, personalized, multi-material</td></tr></tbody></table></div></div>
+    <div class="note" style="margin-top:20px"><strong>⚠️ Key Takeaway</strong><br>The printing press remains one of humanity’s most transformative inventions, enabling literacy, science, and democracy. Today, digital and AI-powered presses continue that legacy, offering speed, customization, and sustainability.</div>
   </div>
 </section>
 
@@ -571,50 +576,341 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
 
 <section class="section cream" id="strategy">
   <div class="container">
-    <div class="center"><div class="eyebrow">Museum Direction</div><h2 class="section-title">Vision, Mission &amp; Strategic Roadmap</h2><p class="section-intro center">A five-year direction for developing the UPPC Print Museum from a start-up heritage site into a flagship tourism attraction.</p></div>
-
+    <div class="center"><div class="eyebrow">Museum Direction</div><h2 class="section-title">Vision, Mission, Objectives &amp; Roadmap</h2><p class="section-intro center">Structured draft for the Vision, Mission, Objectives, and Measurable Indicators of Success for the UPPC Print Museum, aligned with Uganda’s tourism promotion agenda:</p><h3>Uganda Printing and Publishing Corporation (UPPC) Print Museum</h3></div>
     <div class="two-col">
-      <article class="info-card"><div class="icon-title"><div class="icon-box">V</div><div><h3>Vision</h3><p>A premier national heritage center showcasing Uganda’s rich printing and publishing history, inspiring learning, innovation and cultural pride, and contributing to Uganda’s tourism growth.</p></div></div></article>
-      <article class="info-card"><div class="icon-title"><div class="icon-box">M</div><div><h3>Mission</h3><p>To preserve, document and exhibit the history and evolution of printing and publishing in Uganda, providing an engaging cultural and educational experience that attracts local and international visitors, supports heritage tourism and promotes national identity.</p></div></div></article>
+      <article class="info-card"><div class="icon-title"><div class="icon-box">V</div><div><h3>Vision</h3><p>A premier national heritage center showcasing Uganda’s rich printing and publishing history, inspiring learning, innovation, and cultural pride, and contributing to Uganda’s tourism growth.</p></div></div></article>
+      <article class="info-card"><div class="icon-title"><div class="icon-box">M</div><div><h3>Mission</h3><p>To preserve, document, and exhibit the history and evolution of printing and publishing in Uganda, providing an engaging cultural and educational experience that attracts local and international visitors, supports heritage tourism, and promotes national identity.</p></div></div></article>
     </div>
-
     <div class="cards" style="margin-top:25px">
-      <article class="card"><div class="card-body"><span class="tag">Objective 1</span><h3>Preserve Printing Heritage</h3><p>Collect, restore and maintain historical printing and publishing artifacts, equipment and documents.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">Objective 2</span><h3>Enhance Visitor Experience</h3><p>Develop interactive exhibits, guided tours and multimedia presentations to engage visitors.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">Objective 3</span><h3>Promote Cultural Tourism</h3><p>Collaborate with Uganda Tourism Board and other stakeholders to position the Print Museum as a key heritage tourism destination.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">Objective 4</span><h3>Educate &amp; Inspire</h3><p>Offer educational programmes for schools, universities and vocational institutions to promote learning in printing technology and history.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">Objective 5</span><h3>Foster Partnerships</h3><p>Partner with museums, cultural centres and printing industry associations locally and internationally for knowledge exchange and promotion.</p></div></article>
-      <article class="card"><div class="card-body"><span class="tag">Objective 6</span><h3>Ensure Sustainability</h3><p>Develop revenue streams through ticket sales, gift shop, publications, events and heritage-themed merchandise.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">Strategic Objective</span><h3>Preserve Printing Heritage</h3><p>Collect, restore, and maintain historical printing and publishing artifacts, equipment, and documents.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">Strategic Objective</span><h3>Enhance Visitor Experience</h3><p>Develop interactive exhibits, guided tours, and multimedia presentations to engage visitors.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">Strategic Objective</span><h3>Promote Cultural Tourism</h3><p>Collaborate with Uganda Tourism Board (UTB) and other stakeholders to position the Print Museum as a key heritage tourism destination.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">Strategic Objective</span><h3>Educate and Inspire</h3><p>Offer educational programs for schools, universities, and vocational institutions to promote learning in printing technology and history.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">Strategic Objective</span><h3>Foster Community and International Partnerships</h3><p>Partner with museums, cultural centres, and printing industry associations locally and internationally for knowledge exchange and promotional activities.</p></div></article>
+      <article class="card"><div class="card-body"><span class="tag">Strategic Objective</span><h3>Ensure Sustainability</h3><p>Develop revenue streams through ticket sales, gift shop, publications, events, and heritage-themed merchandise.</p></div></article>
     </div>
-
-    <div class="info-card" style="margin-top:25px">
-      <h3>Measurable Indicators of Success</h3>
-      <div class="table-wrap"><table class="strategy-table">
-        <thead><tr><th>Objective</th><th>Indicator</th><th>Target (Annual)</th></tr></thead>
-        <tbody>
-          <tr><td>Preserve Printing Heritage</td><td>Number of artifacts restored and catalogued</td><td>50 artifacts/year</td></tr>
-          <tr><td>Enhance Visitor Experience</td><td>Visitor satisfaction rate from feedback surveys</td><td>≥ 90% satisfaction</td></tr>
-          <tr><td>Promote Cultural Tourism</td><td>Number of local &amp; international tourists visiting</td><td>5,000 visitors/year, growing by 15% annually</td></tr>
-          <tr><td>Educate and Inspire</td><td>Number of educational programmes and school visits</td><td>40 programmes/year</td></tr>
-          <tr><td>Foster Partnerships</td><td>Number of active partnerships with cultural/tourism bodies</td><td>At least 5 partnerships</td></tr>
-          <tr><td>Ensure Sustainability</td><td>Revenue generated from museum activities</td><td>UGX [insert realistic figure] annually, increasing by 10% per year</td></tr>
-        </tbody>
-      </table></div>
-    </div>
-
-    <div class="center" style="margin-top:55px"><div class="eyebrow">2025–2029</div><h2 class="section-title">From Start-Up Heritage Site to Flagship Tourism Attraction</h2></div>
+    <div class="info-card" style="margin-top:25px"><h3>Measurable Indicators of Success</h3><div class="table-wrap"><table class="strategy-table"><thead><tr><th>Objective</th><th>Indicator</th><th>Target (Annual)</th></tr></thead><tbody><tr><td>Preserve Printing Heritage</td><td>Number of artifacts restored and catalogued</td><td>50 artifacts/year</td></tr><tr><td>Enhance Visitor Experience</td><td>Visitor satisfaction rate from feedback surveys</td><td>≥ 90% satisfaction</td></tr><tr><td>Promote Cultural Tourism</td><td>Number of local &amp; international tourists visiting</td><td>5,000 visitors/year (growing by 15% annually)</td></tr><tr><td>Educate and Inspire</td><td>Number of educational programs and school visits</td><td>40 programs/year</td></tr><tr><td>Foster Partnerships</td><td>Number of active partnerships with cultural/tourism bodies</td><td>At least 5 partnerships</td></tr><tr><td>Ensure Sustainability</td><td>Revenue generated from museum activities</td><td>UGX [insert realistic figure] annually, increasing by 10% per year</td></tr></tbody></table></div></div>
+    <div class="center" style="margin-top:55px"><div class="eyebrow">Five-Year Strategic Roadmap: UPPC Print Museum (2025–2029)</div><h2 class="section-title">From Start-Up Heritage Site to Flagship Tourism Attraction</h2></div>
     <div class="roadmap">
-      <article class="roadmap-item"><div class="roadmap-year">2025</div><h3>Foundation &amp; Launch</h3><p>Renovate and set up the museum facility; acquire and catalogue at least 50 artifacts; develop branding, website and marketing; build tourism partnerships; launch a soft opening and school packages.</p><strong>Milestones:</strong><ul><li>Facility completed and operational</li><li>At least 1,000 visitors</li><li>3 formal tourism partnerships</li></ul></article>
-      <article class="roadmap-item"><div class="roadmap-year">2026</div><h3>Engagement &amp; Visibility</h3><p>Expand interactive displays, host thematic exhibitions, train tour guides, introduce a small gift shop and launch marketing targeting schools, universities and domestic tourists.</p><strong>Milestones:</strong><ul><li>2,500+ annual visitors</li><li>≥85% visitor satisfaction</li><li>5 educational institutions with recurring visits</li></ul></article>
-      <article class="roadmap-item"><div class="roadmap-year">2027</div><h3>Diversification &amp; Regional Outreach</h3><p>Partner with tour companies, launch an annual heritage printing festival, introduce multilingual exhibits, expand the collection to 150+ items and implement online virtual tours.</p><strong>Milestones:</strong><ul><li>4,000+ annual visitors</li><li>Featured in at least 3 national tourism campaigns</li><li>3 regional tourism agency partnerships</li></ul></article>
-      <article class="roadmap-item"><div class="roadmap-year">2028</div><h3>National Recognition &amp; Tourism Integration</h3><p>Work with UTB to enter national tourism itineraries, upgrade climate control, security and accessibility, host an international printing and publishing heritage conference and expand heritage learning and retail.</p><strong>Milestones:</strong><ul><li>6,000+ annual visitors, including 20% international tourists</li><li>Recognized as a heritage tourism site in Uganda</li><li>300+ conference delegates from at least 5 countries</li></ul></article>
-      <article class="roadmap-item"><div class="roadmap-year">2029</div><h3>Flagship Tourism Status</h3><p>Achieve national and regional media coverage, introduce premium experiences, reach a self-sustaining revenue model and launch international touring exhibitions.</p><strong>Milestones:</strong><ul><li>8,000+ annual visitors</li><li>≥90% visitor satisfaction</li><li>25% international visitors</li><li>Financial self-sufficiency achieved</li></ul></article>
+      <article class="roadmap-item"><div class="roadmap-year">2025</div><h3>Year 1 – Foundation &amp; Launch (2025)</h3><p><strong>Goal:</strong> Establish a functional museum space and create initial public awareness.</p><ul><li>Renovate and set up the museum facility with curated exhibition space.</li><li>Acquire, restore, and catalogue initial artifacts (minimum 50 items).</li><li>Develop museum branding, website, and marketing materials.</li><li>Build partnerships with Uganda Tourism Board (UTB), Uganda Museums, and local tourism operators.</li><li>Launch soft opening with guided tours for select stakeholders.</li><li>Introduce school and institutional visitation packages.</li></ul><strong>Key Milestones:</strong><ul><li>Museum facility completed and operational.</li><li>At least 1,000 visitors in first year.</li><li>3 formal tourism partnerships established.</li></ul></article>
+      <article class="roadmap-item"><div class="roadmap-year">2026</div><h3>Year 2 – Engagement &amp; Visibility (2026)</h3><p><strong>Goal:</strong> Increase visitor engagement and recognition in the domestic tourism market.</p><ul><li>Expand interactive displays (touchscreens, audiovisual history timelines).</li><li>Host thematic exhibitions (e.g., “Printing and Independence”, “Uganda in Print”).</li><li>Train tour guides and develop a storytelling guide for visitor experience.</li><li>Introduce small gift shop with heritage merchandise.</li><li>Launch marketing campaign targeting schools, universities, and domestic tourists.</li></ul><strong>Key Milestones:</strong><ul><li>Annual visitors: 2,500+</li><li>Visitor satisfaction rate: ≥85%</li><li>5 educational institutions with recurring visits.</li></ul></article>
+      <article class="roadmap-item"><div class="roadmap-year">2027</div><h3>Year 3 – Diversification &amp; Regional Outreach (2027)</h3><p><strong>Goal:</strong> Position the museum as a must-visit heritage site for both local and regional tourists.</p><ul><li>Partner with tour companies to include the Print Museum in Kampala/Entebbe tourism circuits.</li><li>Launch annual heritage printing festival and workshops.</li><li>Introduce multilingual exhibits to cater to East African and international visitors.</li><li>Expand artifact collection to 150+ items, including rare publications.</li><li>Implement online virtual tours for remote audiences.</li></ul><strong>Key Milestones:</strong><ul><li>Annual visitors: 4,000+</li><li>Museum featured in at least 3 national tourism campaigns.</li><li>Partnerships with 3 regional tourism agencies.</li></ul></article>
+      <article class="roadmap-item"><div class="roadmap-year">2028</div><h3>Year 4 – National Recognition &amp; Tourism Integration (2028)</h3><p><strong>Goal:</strong> Achieve official status as one of Uganda’s recognized national heritage tourism attractions.</p><ul><li>Collaborate with UTB to list the Print Museum in top national tourism itineraries.</li><li>Upgrade facilities (climate control, security, and accessibility).</li><li>Host international printing and publishing heritage conference.</li><li>Develop heritage learning programs in collaboration with TVET institutions.</li><li>Expand retail to include museum publications, books, and art prints.</li></ul><strong>Key Milestones:</strong><ul><li>Annual visitors: 6,000+ (including 20% international tourists).</li><li>Officially recognized as a heritage tourism site in Uganda.</li><li>Conference attendance: 300+ delegates from at least 5 countries.</li></ul></article>
+      <article class="roadmap-item"><div class="roadmap-year">2029</div><h3>Year 5 – Flagship Tourism Status (2029)</h3><p><strong>Goal:</strong> Establish the UPPC Print Museum as a flagship cultural tourism destination in East Africa.</p><ul><li>Achieve national and regional media coverage as a must-visit attraction.</li><li>Introduce premium experiences (private tours, VIP packages, interactive printing workshops).</li><li>Reach self-sustaining revenue model through ticket sales, merchandise, events, and sponsorships.</li><li>Launch international touring exhibitions to promote Uganda’s printing heritage abroad.</li></ul><strong>Key Milestones:</strong><ul><li>Annual visitors: 8,000+</li><li>Visitor satisfaction rate: ≥90%</li><li>25% of visitors are international tourists.</li><li>Financial self-sufficiency achieved.</li></ul></article>
     </div>
+    <div class="info-card" style="margin-top:30px"><h3>Strategic Enablers</h3><ul><li><strong>Stakeholder Collaboration:</strong> Strong links with UTB, Ministry of Tourism, Uganda Museums, and private tourism operators.</li><li><strong>Marketing &amp; Promotion:</strong> Active social media, storytelling campaigns, and integration into tour packages.</li><li><strong>Continuous Innovation:</strong> Regularly updated exhibitions, interactive experiences, and educational content.</li><li><strong>Sustainability:</strong> Diversified revenue streams and environmental best practices in museum operations.</li></ul></div>
+    <div class="info-card" style="margin-top:25px"><h3>Visual Timeline: From Start-Up to Flagship Tourism Attraction</h3><div class="table-wrap"><table class="strategy-table"><thead><tr><th>Year</th><th>Theme</th><th>Key Actions</th><th>Milestones &amp; Targets</th></tr></thead><tbody><tr><td>2025</td><td>Foundation &amp; Launch</td><td>- Renovate and set up museum facility
+- Acquire &amp; catalogue 50+ artifacts
+- Develop branding, website, and marketing
+- Partner with UTB &amp; tourism operators
+- Launch soft opening &amp; school packages</td><td>- Facility operational
+- 1,000 visitors
+- 3 tourism partnerships</td></tr><tr><td>2026</td><td>Engagement &amp; Visibility</td><td>- Expand interactive displays
+- Host thematic exhibitions
+- Train tour guides &amp; storytelling scripts
+- Open gift shop
+- Launch domestic marketing campaign</td><td>- 2,500+ visitors
+- ≥85% satisfaction rate
+- 5 partner schools</td></tr><tr><td>2027</td><td>Diversification &amp; Regional Outreach</td><td>- Partner with tour companies
+- Launch annual heritage printing festival
+- Add multilingual exhibits
+- Grow artifact collection to 150+ items
+- Offer online virtual tours</td><td>- 4,000+ visitors
+- Featured in 3 national tourism campaigns
+- 3 regional tourism agency partnerships</td></tr><tr><td>2028</td><td>National Recognition</td><td>- UTB tourism itinerary inclusion
+- Facility upgrades (climate, security, accessibility)
+- Host international printing heritage conference
+- Launch heritage learning programs
+- Expand retail offerings</td><td>- 6,000+ visitors (20% international)
+- Recognized as national heritage site
+- 300+ conference delegates from 5+ countries</td></tr><tr><td>2029</td><td>Flagship Tourism Status</td><td>- Achieve regional media coverage
+- Introduce premium visitor experiences
+- Achieve self-sustaining revenue model
+- Launch international touring exhibitions</td><td>- 8,000+ visitors (25% international)
+- ≥90% satisfaction rate
+- Full financial sustainability</td></tr></tbody></table></div></div>
+    <div class="cta" style="margin-top:25px"><h2>Strategic Enablers</h2><ul><li>Stakeholder Collaboration (UTB, Ministry of Tourism, Uganda Museums)</li><li>Strong Marketing &amp; Digital Promotion</li><li>Regular Exhibition Updates &amp; Innovation</li><li>Sustainable Revenue Streams</li></ul></div>
+  </div>
+</section>
 
-    <div class="cta" style="margin-top:30px">
-      <h2>Strategic Enablers</h2>
-      <p>Stakeholder collaboration with UTB, the Ministry of Tourism, Uganda Museums and private tourism operators; strong marketing and digital promotion; regular exhibition updates and innovation; and sustainable revenue streams and environmental best practices.</p>
-    </div>
+<section class="section" id="source-record">
+  <div class="container">
+    <div class="center"><div class="eyebrow">Complete Supplied Record</div><h2 class="section-title">Verbatim Source Material</h2><p class="section-intro center">The complete supplied museum text is retained below verbatim, without summarizing, deleting, or rewriting any of its information.</p></div>
+    <div class="verbatim-source-title">Full supplied text</div>
+    <pre class="verbatim-source">
+
+A historical timeline of the Uganda Government Printer, later transformed into the Uganda Printing and Publishing Corporation (UPPC):
+📜 Timeline of the Government Printer → UPPC
+Colonial Era Foundations
+1902 – Establishment of the Government Printer in Entebbe under the British Protectorate. Its mandate was to produce the Uganda Gazette, laws, ordinances, and official notices.
+1920s–1950s – The Government Printer expanded to handle administrative publications, annual reports, and colonial records.
+Independence &amp; Transition
+1962 – Uganda attained independence; the Government Printer continued as the official state printer, producing parliamentary acts, gazettes, and government communications.
+1967 – Under the new republican constitution, the Government Printer became central to disseminating decrees and laws.
+Institutional Transformation
+1970s – Despite political upheaval under Idi Amin, the Government Printer remained the sole authority for official publications, including decrees and propaganda.
+1992 – The UPPC Act formally transformed the Government Printer into the Uganda Printing and Publishing Corporation (UPPC), granting it corporate status while retaining its mandate as the official government printer.
+Modernization &amp; Challenges
+1990s–2000s – UPPC expanded into commercial printing but faced competition from private presses (notably Nasser Road in Kampala).
+2010s – UPPC began modernization efforts, including digital workflows, but struggled with funding and equipment upgrades.
+2020s – UPPC rebranded and emphasized its role in secure printing (ballot papers, exams, permits) while exploring partnerships with educational and archival institutions.
+📊 Summary Table
+Period	Institution	Key Role
+1902–1962	Government Printer	Colonial gazettes, laws, reports
+1962–1992	Government Printer	Independence-era official publications
+1992–Present	UPPC	Official government printer, secure documents, modernization
+✅ Key Takeaway: The Government Printer, founded in 1902, evolved into UPPC in 1992. It remains Uganda’s official state printer, balancing its statutory role with modernization and competition from private presses.
+
+
+
+
+
+ 
+about machines	
+INTERTYPE: was mostly used during the budgeting period because of its speed.
+manufactured between 1912 and 1976 
+	MONOTYPE: Was used mostly in printing of books.
+The first Monotype typesetting machine was invented by American engineer Tolbert Lanston, who patented his initial mechanical typesetting device in 1887. The commercial hot-metal system, featuring the keyboard and the casting machine, was brought to market in 1900
+	MONOTYPE-CASTER: Was mostly used during finance bill which had lots of figures.
+Between 1900 and the late 1960s. Tolbert Lanston’s Monotype system—consisting of a perforated paper-tape Keyboard and an automatic hot-metal Caster—was first brought to commercial market in 1900. Production of these machines steadily continued until the last Caster was manufactured in Surrey, England, in 1989
+CAMERA: Was majorly used for image transfer and processing.
+	LUDLOW PHOTOGRAPH MACHINE: It was designed to type big letters suitable for posters, letterheads, IDs etc
+The Ludlow Typograph was manufactured starting in 1912. First developed commercially in 1911, the hot metal typesetting machine was invented by William I. Ludlow and William A. Reade. Commercial production began in Chicago, and the machine found its way into printing plants around 1913 to 1914
+	VICOBOLD: It was used to for relief printing, embossing, debossing, and foil stamping.
+Was manufactured from the mid-1920s through the 1950s. The presses were originally designed and built in Germany by Rockstroh-Werke AG around 1925, and were later manufactured under license in the UK by Frank F. Pershke    
+Letter blocks  
+LETTER BLOCKS: they are majorly into two types i.e single block and the Slag which are casted by the monotype machine and intertype machine respectively.
+NB. The use of these machines at UPPC is estimated to be from 1920s
+
+
+ 
+Benefits of Preserving Old Printing Machines
+1. Historical Preservation
+⦁	Safeguards Uganda’s publishing and printing heritage.
+⦁	Provides tangible evidence of technological evolution.
+⦁	Ensures future generations can see and understand the tools that shaped communication.
+2. Educational Value
+⦁	Offers hands-on learning for students, researchers, and staff.
+⦁	Demonstrates the mechanics of printing before digital technology.
+⦁	Supports curriculum development in history, media studies, and technical training.
+3. Cultural Identity &amp; Pride
+⦁	Showcases Uganda’s journey in publishing and knowledge dissemination.
+⦁	Strengthens national pride by connecting modern publishing to its roots.
+⦁	Acts as a cultural landmark for visitors and scholars.
+4. Innovation Inspiration
+⦁	Old machines highlight problem-solving and craftsmanship of past eras.
+⦁	Sparks creativity by showing how limitations led to breakthroughs.
+⦁	Encourages staff and visitors to think about how technology evolves.
+5. Tourism &amp; Public Engagement
+⦁	Attracts local and international visitors.
+⦁	Creates opportunities for guided tours, exhibitions, and interactive displays.
+⦁	Generates revenue and visibility for UPPC through museum activities.
+6. Institutional Legacy
+⦁	Positions UPPC as custodian of Uganda’s publishing heritage.
+⦁	Reinforces UPPC’s role in knowledge preservation and dissemination.
+⦁	Builds credibility with donors, partners, and educational institutions.
+7. Research &amp; Documentation
+⦁	Provides primary sources for academic research.
+⦁	Enables comparative studies between traditional and modern printing.
+⦁	Supports archiving projects and scholarly publications.
+
+
+ Historical Timeline of Printing &amp; Publishing in Uganda
+Colonial Foundations (1894–1962)
+1894 – Uganda declared a British Protectorate; printing introduced mainly for administrative purposes.
+1903 – Establishment of the Government Printer, later formalized as the Uganda Printing and Publishing Corporation (UPPC). It became the official printer for government gazettes, laws, and notices.
+1920s–1950s – Missionary presses (Protestant and Catholic) produced religious texts, educational materials, and early vernacular publications.
+1954 – Hydroelectric power at Owen Falls Dam boosted industrial capacity, including printing.
+Independence &amp; Institutional Growth (1962–1980s)
+1962 – Uganda gains independence; UPPC continues as the official government printer.
+1960s–1970s – Expansion of educational publishing, newspapers, and political materials.
+1970s – Idi Amin’s regime relied heavily on UPPC for official decrees and propaganda.
+Liberalization &amp; Private Sector Expansion (1980s–2000s)
+1980s–1990s – Growth of private printing firms, especially on Nasser Road in Kampala, which became Uganda’s printing hub.
+1992 – UPPC Act reaffirmed UPPC as the official government printer, responsible for sensitive documents (ballot papers, exams, permits).
+1990s – Introduction of modern offset presses and limited digital printing.
+Modern Era (2000s–Present)
+2000s – Rise of digital publishing, photocopy bureaus, and small-scale presses serving education, NGOs, and SMEs.
+2010s – UPPC struggles with funding and outdated equipment but begins rebranding and modernization efforts.
+Present Day – Printing in Uganda is a dual system:
+UPPC: Official government printer for gazettes, and secure documents. New Vision is also a popular government owned printing and publishing company
+Private presses (Nasser Road): Dominant in commercial printing, books, flyers, and branding.
+Digital publishing: Growing rapidly, especially in education and media sectors.
+📊 Summary Table
+Period	Key Development	Impact
+Colonial (1903–1962)	UPPC founded, missionary presses	Government gazettes, religious texts
+Independence (1962–1980s)	UPPC central role	Official decrees, education materials
+Liberalization (1980s–2000s)	Nasser Road private presses	Commercial printing boom
+Modern Era (2000s–Present)	Digital publishing, UPPC reforms	Diversified industry, modernization
+✅ Key Takeaway: Uganda’s printing and publishing history reflects its political and economic transitions — from colonial administration to independence, liberalization, and today’s mix of government and private sector printing.
+
+
+Historical Timeline of Printing &amp; Publishing Machines
+Ancient Foundations
+3100 BCE – Cuneiform tablets in Sumer: wedge-shaped marks on clay using stylus.
+3000 BCE – Cylinder seals in Mesopotamia used to imprint designs on clay.
+868 CE – Diamond Sutra in China: earliest dated printed book using woodblock printing.
+Early Movable Type
+1041 CE – Bi Sheng (China) invents movable type using baked clay.
+1377 CE – Jikji (Korea): oldest surviving book printed with movable metal type.
+Gutenberg Revolution
+1438–1444 CE – Johannes Gutenberg develops adjustable type mold in Mainz, Germany.
+1455 CE – Gutenberg Bible: first major book printed in Europe with movable type, sparking mass publishing.
+Industrial Advancements
+1814 CE – Steam-powered press by Friedrich Koenig: prints 1,100 sheets/hour, revolutionizing newspaper production.
+1843 CE – Rotary press by Richard Hoe: continuous roll printing, enabling mass circulation.
+1875 CE – Offset printing developed in England, later perfected in the U.S.
+20th Century Innovations
+1907 CE – Screen printing patented, expanding into textiles and posters.
+1950s CE – Phototypesetting replaces hot metal typesetting, improving speed and flexibility.
+1970s CE – Laser printing introduced by Xerox, combining digital input with high-speed output.
+Digital &amp; Modern Era
+1990s CE – Digital printing presses (e.g., Indigo, Xerox DocuTech) allow short-run, on-demand publishing.
+2000s CE – 3D printing emerges, expanding the concept of “printing” beyond paper to physical objects.
+Present Day – AI-driven and cloud-connected presses integrate automation, predictive maintenance, and personalized publishing.
+📊 Summary Table
+Era	Key Machine/Method	Impact
+Ancient	Cuneiform, Cylinder seals	First recorded printing impressions
+Medieval Asia	Woodblock, Movable type	Mass book production in China/Korea
+Renaissance	Gutenberg Press	Birth of modern publishing
+Industrial Age	Steam &amp; Rotary Presses	Mass newspapers, affordable books
+20th Century	Offset, Screen, Laser	High-quality, fast, versatile printing
+Digital Era	Digital &amp; 3D Printing	On-demand, personalized, multi-material
+⚠️ Key Takeaway
+The printing press remains one of humanity’s most transformative inventions, enabling literacy, science, and democracy. Today, digital and AI-powered presses continue that legacy, offering speed, customization, and sustainability.
+
+
+
+Structured draft for the Vision, Mission, Objectives, and Measurable Indicators of Success for the UPPC Print Museum, aligned with Uganda’s tourism promotion agenda:
+Uganda Printing and Publishing Corporation (UPPC) Print Museum
+Vision
+A premier national heritage center showcasing Uganda’s rich printing and publishing history, inspiring learning, innovation, and cultural pride, and contributing to Uganda’s tourism growth.
+Mission
+To preserve, document, and exhibit the history and evolution of printing and publishing in Uganda, providing an engaging cultural and educational experience that attracts local and international visitors, supports heritage tourism, and promotes national identity.
+Strategic Objectives
+Preserve Printing Heritage
+Collect, restore, and maintain historical printing and publishing artifacts, equipment, and documents.
+Enhance Visitor Experience
+Develop interactive exhibits, guided tours, and multimedia presentations to engage visitors.
+Promote Cultural Tourism
+Collaborate with Uganda Tourism Board (UTB) and other stakeholders to position the Print Museum as a key heritage tourism destination.
+Educate and Inspire
+Offer educational programs for schools, universities, and vocational institutions to promote learning in printing technology and history.
+Foster Community and International Partnerships
+Partner with museums, cultural centres, and printing industry associations locally and internationally for knowledge exchange and promotional activities.
+Ensure Sustainability
+Develop revenue streams through ticket sales, gift shop, publications, events, and heritage-themed merchandise.
+
+Measurable Indicators of Success
+Objective	Indicator	Target (Annual)
+Preserve Printing Heritage	Number of artifacts restored and catalogued	50 artifacts/year
+Enhance Visitor Experience	Visitor satisfaction rate from feedback surveys	≥ 90% satisfaction
+Promote Cultural Tourism	Number of local &amp; international tourists visiting	5,000 visitors/year (growing by 15% annually)
+Educate and Inspire	Number of educational programs and school visits	40 programs/year
+Foster Partnerships	Number of active partnerships with cultural/tourism bodies	At least 5 partnerships
+Ensure Sustainability	Revenue generated from museum activities	UGX [insert realistic figure] annually, increasing by 10% per year
+
+Five-Year Strategic Roadmap: UPPC Print Museum (2025–2029)
+From Start-Up Heritage Site to Flagship Tourism Attraction
+
+Year 1 – Foundation &amp; Launch (2025)
+Goal: Establish a functional museum space and create initial public awareness.
+Renovate and set up the museum facility with curated exhibition space.
+Acquire, restore, and catalogue initial artifacts (minimum 50 items).
+Develop museum branding, website, and marketing materials.
+Build partnerships with Uganda Tourism Board (UTB), Uganda Museums, and local tourism operators.
+Launch soft opening with guided tours for select stakeholders.
+Introduce school and institutional visitation packages.
+
+Key Milestones:
+Museum facility completed and operational.
+At least 1,000 visitors in first year.
+3 formal tourism partnerships established.
+
+Year 2 – Engagement &amp; Visibility (2026)
+Goal: Increase visitor engagement and recognition in the domestic tourism market.
+Expand interactive displays (touchscreens, audiovisual history timelines).
+Host thematic exhibitions (e.g., “Printing and Independence”, “Uganda in Print”).
+Train tour guides and develop a storytelling guide for visitor experience.
+Introduce small gift shop with heritage merchandise.
+Launch marketing campaign targeting schools, universities, and domestic tourists.
+Key Milestones:
+Annual visitors: 2,500+
+Visitor satisfaction rate: ≥85%
+5 educational institutions with recurring visits.
+
+Year 3 – Diversification &amp; Regional Outreach (2027)
+Goal: Position the museum as a must-visit heritage site for both local and regional tourists.
+Partner with tour companies to include the Print Museum in Kampala/Entebbe tourism circuits.
+Launch annual heritage printing festival and workshops.
+Introduce multilingual exhibits to cater to East African and international visitors.
+Expand artifact collection to 150+ items, including rare publications.
+Implement online virtual tours for remote audiences.
+Key Milestones:
+Annual visitors: 4,000+
+Museum featured in at least 3 national tourism campaigns.
+Partnerships with 3 regional tourism agencies.
+
+Year 4 – National Recognition &amp; Tourism Integration (2028)
+Goal: Achieve official status as one of Uganda’s recognized national heritage tourism attractions.
+Collaborate with UTB to list the Print Museum in top national tourism itineraries.
+Upgrade facilities (climate control, security, and accessibility).
+Host international printing and publishing heritage conference.
+Develop heritage learning programs in collaboration with TVET institutions.
+Expand retail to include museum publications, books, and art prints.
+Key Milestones:
+Annual visitors: 6,000+ (including 20% international tourists).
+Officially recognized as a heritage tourism site in Uganda.
+Conference attendance: 300+ delegates from at least 5 countries.
+
+Year 5 – Flagship Tourism Status (2029)
+Goal: Establish the UPPC Print Museum as a flagship cultural tourism destination in East Africa.
+Achieve national and regional media coverage as a must-visit attraction.
+Introduce premium experiences (private tours, VIP packages, interactive printing workshops).
+Reach self-sustaining revenue model through ticket sales, merchandise, events, and sponsorships.
+Launch international touring exhibitions to promote Uganda’s printing heritage abroad.
+Key Milestones:
+Annual visitors: 8,000+
+Visitor satisfaction rate: ≥90%
+25% of visitors are international tourists.
+Financial self-sufficiency achieved.
+
+Strategic Enablers
+Stakeholder Collaboration: Strong links with UTB, Ministry of Tourism, Uganda Museums, and private tourism operators.
+Marketing &amp; Promotion: Active social media, storytelling campaigns, and integration into tour packages.
+Continuous Innovation: Regularly updated exhibitions, interactive experiences, and educational content.
+Sustainability: Diversified revenue streams and environmental best practices in museum operations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Visual Timeline: From Start-Up to Flagship Tourism Attraction
+Year	Theme	Key Actions	Milestones &amp; Targets
+2025	Foundation &amp; Launch	- Renovate and set up museum facility- Acquire &amp; catalogue 50+ artifacts- Develop branding, website, and marketing- Partner with UTB &amp; tourism operators- Launch soft opening &amp; school packages	- Facility operational- 1,000 visitors- 3 tourism partnerships
+2026	Engagement &amp; Visibility	- Expand interactive displays- Host thematic exhibitions- Train tour guides &amp; storytelling scripts- Open gift shop- Launch domestic marketing campaign	- 2,500+ visitors- ≥85% satisfaction rate- 5 partner schools
+2027	Diversification &amp; Regional Outreach	- Partner with tour companies- Launch annual heritage printing festival- Add multilingual exhibits- Grow artifact collection to 150+ items- Offer online virtual tours	- 4,000+ visitors- Featured in 3 national tourism campaigns- 3 regional tourism agency partnerships
+2028	National Recognition	- UTB tourism itinerary inclusion- Facility upgrades (climate, security, accessibility)- Host international printing heritage conference- Launch heritage learning programs- Expand retail offerings	- 6,000+ visitors (20% international)- Recognized as national heritage site- 300+ conference delegates from 5+ countries
+2029	Flagship Tourism Status	- Achieve regional media coverage- Introduce premium visitor experiences- Achieve self-sustaining revenue model- Launch international touring exhibitions	- 8,000+ visitors (25% international)- ≥90% satisfaction rate- Full financial sustainability
+
+Strategic Enablers
+Stakeholder Collaboration (UTB, Ministry of Tourism, Uganda Museums)
+Strong Marketing &amp; Digital Promotion
+Regular Exhibition Updates &amp; Innovation
+Sustainable Revenue Streams
+</pre>
   </div>
 </section>
 
@@ -717,7 +1013,7 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
     <div><h4>Learn &amp; Research</h4><ul><li><a href="#education">Education</a></li><li><a href="#digital">Digital Archive</a></li><li><a href="#machine-history">Machine History</a></li><li><a href="#oral-history">Oral History</a></li><li><a href="#stories">Stories &amp; Articles</a></li><li><a href="#partners">Partners</a></li></ul></div>
     <div><h4>Visit &amp; Contact</h4><ul><li><a href="#visit">Plan Visit</a></li><li><a href="#events">Events</a></li><li><a href="#news">News</a></li><li><a href="#contact">Contact</a></li><li><a href="mailto:info@uppc.go.ug">info@uppc.go.ug</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><div class="container">© <span id="year"></span> Uganda Printing &amp; Publishing Museum. All rights reserved. &nbsp; | &nbsp; Built around Uganda's print heritage.</div></div>
+  <div class="footer-bottom"><div class="container">© <span id="year"></span> Uganda Printing &amp; Publishing Museum. <span class="source-note">All supplied museum source material is retained in full in the relevant sections.</span> All rights reserved. &nbsp; | &nbsp; Built around Uganda's print heritage.</div></div>
 </footer>
 
 <div class="modal" id="modal" aria-hidden="true">
