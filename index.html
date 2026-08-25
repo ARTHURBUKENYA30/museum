@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="image" href="images/heidelberg.jpg" fetchpriority="high">
 <title>Uganda Printing & Publishing Museum</title>
 <meta name="description" content="Uganda Printing and Publishing Corporation (UPPC) Print Museum — preserving, documenting and exhibiting Uganda's printing and publishing history while supporting learning, innovation, cultural pride and heritage tourism.">
 <style>
@@ -47,7 +48,7 @@ header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.98);borde
 
 /* HERO */
 .hero{min-height:680px;color:#fff;display:flex;align-items:center;position:relative;overflow:hidden;background:
-linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.72),rgba(0,0,0,.25)),url("images/1.jpg") center/cover no-repeat}
+linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.72),rgba(0,0,0,.25)),url("images/heidelberg.jpg") center/cover no-repeat}
 .hero:after{content:"";position:absolute;bottom:0;left:0;right:0;height:10px;background:linear-gradient(90deg,var(--black) 0 33.33%,var(--yellow) 33.33% 66.66%,var(--red) 66.66% 100%)}
 .hero-content{max-width:850px;padding:100px 0}
 .hero-kicker{display:inline-block;border:2px solid var(--yellow);color:var(--yellow);padding:7px 14px;border-radius:50px;font-weight:900;letter-spacing:1.5px;font-size:.76rem;text-transform:uppercase;margin-bottom:20px}
@@ -102,7 +103,7 @@ linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.72),rgba(0,0,0,.25)),url("imag
 .details{margin-top:13px;color:var(--red);font-weight:900;display:inline-block}.details:hover{color:#000}
 /* PROCESS */
 .process{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.process-card{background:#fff;border:1px solid var(--line);padding:25px;border-radius:var(--radius)}
+.process-card{background:#fff;border:1px solid var(--line);padding:25px;border-radius:var(--radius)}.process-image{width:100%;height:220px;object-fit:cover;border-radius:12px;margin-bottom:18px;background:#ddd;content-visibility:auto}
 .process-card .era{font-weight:900;color:var(--red);font-size:.84rem}.process-card h3{font:700 1.35rem Georgia,serif;margin:8px 0}.process-card p{color:var(--muted);font-size:.93rem}
 /* DIGITAL */
 .digital-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:25px}
@@ -165,6 +166,9 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
 .modal-box{background:#fff;max-width:680px;width:100%;max-height:88vh;overflow:auto;border-radius:15px;padding:30px;position:relative;border-top:8px solid var(--red)}
 .modal-close{position:absolute;right:15px;top:10px;border:0;background:none;font-size:2rem;cursor:pointer}.modal-box h2{font:700 2rem Georgia,serif;margin-bottom:12px}.modal-box p{color:var(--muted)}
 .note{padding:14px 16px;background:#fff8cc;border-left:5px solid var(--yellow);border-radius:8px;color:#333;margin-top:18px}
+/* PERFORMANCE: keep below-the-fold rendering cheap */
+section:not(#home){content-visibility:auto;contain-intrinsic-size:700px}
+.card-image img,.gallery-item img,.process-image{content-visibility:auto}
 @media(max-width:1050px){
  .nav-links{display:none}.menu{display:block}.nav-links.open{position:absolute;left:0;right:0;top:88px;background:#fff;display:flex;flex-direction:column;align-items:stretch;padding:12px 4%;border-bottom:4px solid var(--red)}
  .cards,.collection-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:repeat(2,1fr)}
@@ -202,8 +206,8 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
   <div class="container nav">
     <a href="#home" class="brand" aria-label="Uganda Printing and Publishing Museum home">
       <span class="logo-frame">
-        <img class="logo" src="./images/logo.jpg" alt="logo"
-          onerror="this.style.display='none';document.getElementById('logoFallback').style.display='grid'">
+        <img class="logo" src="./images/logo.jpg" alt="Uganda Printing & Publishing Museum logo" decoding="async" fetchpriority="high"
+          onerror="this.onerror=null;this.style.display='none';document.getElementById('logoFallback').style.display='grid'">
         <span id="logoFallback" class="logo-fallback">UG</span>
       </span>
       <span>
@@ -306,12 +310,12 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
       <button class="filter" data-filter="materials">Printing Materials</button>
     </div>
     <div class="collection-grid">
-      <article class="card collection-item" data-category="machines"><div class="card-image"><img src="images/chandler.jpg" alt="chandler"></div><div class="card-body"><span class="tag">Printing Machines</span><h3>Heidelberg Platen Press</h3><p>Historic letterpress machinery representing the industrial era of commercial and document printing.</p><a href="#" class="details" data-title="Heidelberg Platen Press" data-text="Historic letterpress machinery representing the industrial era of commercial and document printing.">View Details →</a></div></article>
-      <article class="card collection-item" data-category="machines"><div class="card-image"><img src="images/hand.jpg" alt="hand"></div><div class="card-body"><span class="tag">Printing Machines</span><h3>Hand-Fed Platen Press</h3><p>Early printing machinery associated with small print shops, educational publishing and heritage demonstrations.</p><a href="#" class="details" data-title="Hand-Fed Platen Press" data-text="Early printing machinery associated with small print shops, educational publishing and heritage demonstrations.">View Details →</a></div></article>
-      <article class="card collection-item" data-category="publishing"><div class="card-image"><img src="images/heidelberg.jpg" alt="heidelberg"></div><div class="card-body"><span class="tag">Publishing Equipment</span><h3>Chandler &amp; Price Press</h3><p>A treadle press representing mid-20th-century print-shop technology and hands-on production.</p><a href="#" class="details" data-title="Chandler & Price Press" data-text="A treadle press representing mid-20th-century print-shop technology and hands-on production.">View Details →</a></div></article>
-      <article class="card collection-item" data-category="documents"><div class="card-image"><img src="images/historic.jpg" alt="historic"></div><div class="card-body"><span class="tag">Historical Documents</span><h3>Historic Books &amp; Documents</h3><p>Books, manuscripts and documentary material connected to Uganda's early literacy, education and publishing history.</p><a href="#" class="details" data-title="Historic Books & Documents" data-text="Books, manuscripts and documentary material connected to Uganda's early literacy, education and publishing history.">View Details →</a></div></article>
-      <article class="card collection-item" data-category="gazettes"><div class="card-image"><img src="images/uganda.jpg" alt="uganda"></div><div class="card-body"><span class="tag">Official Gazette</span><h3>Uganda Gazette Collection</h3><p>Official publications containing public notices, legal notices, proclamations, appointments, bills and other government information.</p><a href="#" class="details" data-title="Uganda Gazette Collection" data-text="A core documentary collection for understanding official public information and legal publication in Uganda.">View Details →</a></div></article>
-      <article class="card collection-item" data-category="materials"><div class="card-image"><img src="images/type.jpg" alt="type"></div><div class="card-body"><span class="tag">Printing Materials</span><h3>Type, Letter Blocks &amp; Print Materials</h3><p>Metal type, letter blocks, slugs, composing tools, paper, inks and other materials used in the printing process.</p><a href="#" class="details" data-title="Type, Letter Blocks & Print Materials" data-text="The collection includes examples of type and letter blocks, including single blocks and slugs cast through Monotype and Intertype systems.">View Details →</a></div></article>
+      <article class="card collection-item" data-category="machines"><div class="card-image"><img src="images/chandler.jpg" loading="lazy" decoding="async" alt="chandler"></div><div class="card-body"><span class="tag">Printing Machines</span><h3>Heidelberg Platen Press</h3><p>Historic letterpress machinery representing the industrial era of commercial and document printing.</p><a href="#" class="details" data-title="Heidelberg Platen Press" data-text="Historic letterpress machinery representing the industrial era of commercial and document printing.">View Details →</a></div></article>
+      <article class="card collection-item" data-category="machines"><div class="card-image"><img src="images/hand.jpg" loading="lazy" decoding="async" alt="hand"></div><div class="card-body"><span class="tag">Printing Machines</span><h3>Hand-Fed Platen Press</h3><p>Early printing machinery associated with small print shops, educational publishing and heritage demonstrations.</p><a href="#" class="details" data-title="Hand-Fed Platen Press" data-text="Early printing machinery associated with small print shops, educational publishing and heritage demonstrations.">View Details →</a></div></article>
+      <article class="card collection-item" data-category="publishing"><div class="card-image"><img src="images/heidelberg.jpg" loading="lazy" decoding="async" alt="heidelberg"></div><div class="card-body"><span class="tag">Publishing Equipment</span><h3>Chandler &amp; Price Press</h3><p>A treadle press representing mid-20th-century print-shop technology and hands-on production.</p><a href="#" class="details" data-title="Chandler & Price Press" data-text="A treadle press representing mid-20th-century print-shop technology and hands-on production.">View Details →</a></div></article>
+      <article class="card collection-item" data-category="documents"><div class="card-image"><img src="images/historic.jpg" loading="lazy" decoding="async" alt="historic"></div><div class="card-body"><span class="tag">Historical Documents</span><h3>Historic Books &amp; Documents</h3><p>Books, manuscripts and documentary material connected to Uganda's early literacy, education and publishing history.</p><a href="#" class="details" data-title="Historic Books & Documents" data-text="Books, manuscripts and documentary material connected to Uganda's early literacy, education and publishing history.">View Details →</a></div></article>
+      <article class="card collection-item" data-category="gazettes"><div class="card-image"><img src="images/uganda.jpg" loading="lazy" decoding="async" alt="uganda"></div><div class="card-body"><span class="tag">Official Gazette</span><h3>Uganda Gazette Collection</h3><p>Official publications containing public notices, legal notices, proclamations, appointments, bills and other government information.</p><a href="#" class="details" data-title="Uganda Gazette Collection" data-text="A core documentary collection for understanding official public information and legal publication in Uganda.">View Details →</a></div></article>
+      <article class="card collection-item" data-category="materials"><div class="card-image"><img src="images/type.jpg" loading="lazy" decoding="async" alt="type"></div><div class="card-body"><span class="tag">Printing Materials</span><h3>Type, Letter Blocks &amp; Print Materials</h3><p>Metal type, letter blocks, slugs, composing tools, paper, inks and other materials used in the printing process.</p><a href="#" class="details" data-title="Type, Letter Blocks & Print Materials" data-text="The collection includes examples of type and letter blocks, including single blocks and slugs cast through Monotype and Intertype systems.">View Details →</a></div></article>
     </div>
   </div>
 </section>
@@ -320,13 +324,13 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
   <div class="container">
     <div class="center"><div class="eyebrow">Historical Machines</div><h2 class="section-title">Machines That Made the Page</h2><p class="section-intro center">about machines</p></div>
     <div class="process">
-      <article class="process-card"><img src="images/25.JPG" alt="Intertype machine" class="process-image"><div class="era">1912–1976</div><h3>INTERTYPE</h3><p>was mostly used during the budgeting period because of its speed.</p><p>manufactured between 1912 and 1976</p></article>
-      <article class="process-card"><img src="images/27.JPG" alt="monotype" class="process-image"><div class="era">Commercial hot-metal system from 1900</div><h3>MONOTYPE</h3><p>Was used mostly in printing of books.</p><p>The first Monotype typesetting machine was invented by American engineer Tolbert Lanston, who patented his initial mechanical typesetting device in 1887. The commercial hot-metal system, featuring the keyboard and the casting machine, was brought to market in 1900</p></article>
-      <article class="process-card"><img src="images/3.JPG" alt="monotype-caster" class="process-image"><div class="era">1900–late 1960s; last Caster manufactured in 1989</div><h3>MONOTYPE-CASTER</h3><p>Was mostly used during finance bill which had lots of figures.</p><p>Between 1900 and the late 1960s. Tolbert Lanston’s Monotype system—consisting of a perforated paper-tape Keyboard and an automatic hot-metal Caster—was first brought to commercial market in 1900. Production of these machines steadily continued until the last Caster was manufactured in Surrey, England, in 1989</p></article>
-      <article class="process-card"><img src="images/8.JPG" alt="camera" class="process-image"><div class="era">Image transfer and processing</div><h3>CAMERA</h3><p>Was majorly used for image transfer and processing.</p></article>
-      <article class="process-card"><img src="images/16.JPG" alt="ludlon photograph machine" class="process-image"><div class="era">Manufactured starting in 1912</div><h3>LUDLOW PHOTOGRAPH MACHINE</h3><p>It was designed to type big letters suitable for posters, letterheads, IDs etc</p><p>The Ludlow Typograph was manufactured starting in 1912. First developed commercially in 1911, the hot metal typesetting machine was invented by William I. Ludlow and William A. Reade. Commercial production began in Chicago, and the machine found its way into printing plants around 1913 to 1914</p></article>
-      <article class="process-card"><img src="images/20.JPG" alt="vicobold" class="process-image"><div class="era">Mid-1920s through the 1950s</div><h3>VICOBOLD</h3><p>It was used to for relief printing, embossing, debossing, and foil stamping.</p><p>Was manufactured from the mid-1920s through the 1950s. The presses were originally designed and built in Germany by Rockstroh-Werke AG around 1925, and were later manufactured under license in the UK by Frank F. Pershke</p></article>
-      <article class="process-card"><img src="images/69.JPG" alt="letter blocks" class="process-image"><div class="era">Estimated UPPC use from the 1920s</div><h3>Letter blocks</h3><p>LETTER BLOCKS: they are majorly into two types i.e single block and the Slag which are casted by the monotype machine and intertype machine respectively.</p><p>NB. The use of these machines at UPPC is estimated to be from 1920s</p></article>
+      <article class="process-card"><img src="images/25.JPG" loading="lazy" decoding="async" alt="Intertype machine" class="process-image"><div class="era">1912–1976</div><h3>INTERTYPE</h3><p>was mostly used during the budgeting period because of its speed.</p><p>manufactured between 1912 and 1976</p></article>
+      <article class="process-card"><img src="images/27.JPG" loading="lazy" decoding="async" alt="monotype" class="process-image"><div class="era">Commercial hot-metal system from 1900</div><h3>MONOTYPE</h3><p>Was used mostly in printing of books.</p><p>The first Monotype typesetting machine was invented by American engineer Tolbert Lanston, who patented his initial mechanical typesetting device in 1887. The commercial hot-metal system, featuring the keyboard and the casting machine, was brought to market in 1900</p></article>
+      <article class="process-card"><img src="images/3.JPG" loading="lazy" decoding="async" alt="monotype-caster" class="process-image"><div class="era">1900–late 1960s; last Caster manufactured in 1989</div><h3>MONOTYPE-CASTER</h3><p>Was mostly used during finance bill which had lots of figures.</p><p>Between 1900 and the late 1960s. Tolbert Lanston’s Monotype system—consisting of a perforated paper-tape Keyboard and an automatic hot-metal Caster—was first brought to commercial market in 1900. Production of these machines steadily continued until the last Caster was manufactured in Surrey, England, in 1989</p></article>
+      <article class="process-card"><img src="images/8.JPG" loading="lazy" decoding="async" alt="camera" class="process-image"><div class="era">Image transfer and processing</div><h3>CAMERA</h3><p>Was majorly used for image transfer and processing.</p></article>
+      <article class="process-card"><img src="images/16.JPG" loading="lazy" decoding="async" alt="ludlon photograph machine" class="process-image"><div class="era">Manufactured starting in 1912</div><h3>LUDLOW PHOTOGRAPH MACHINE</h3><p>It was designed to type big letters suitable for posters, letterheads, IDs etc</p><p>The Ludlow Typograph was manufactured starting in 1912. First developed commercially in 1911, the hot metal typesetting machine was invented by William I. Ludlow and William A. Reade. Commercial production began in Chicago, and the machine found its way into printing plants around 1913 to 1914</p></article>
+      <article class="process-card"><img src="images/20.JPG" loading="lazy" decoding="async" alt="vicobold" class="process-image"><div class="era">Mid-1920s through the 1950s</div><h3>VICOBOLD</h3><p>It was used to for relief printing, embossing, debossing, and foil stamping.</p><p>Was manufactured from the mid-1920s through the 1950s. The presses were originally designed and built in Germany by Rockstroh-Werke AG around 1925, and were later manufactured under license in the UK by Frank F. Pershke</p></article>
+      <article class="process-card"><img src="images/69.JPG" loading="lazy" decoding="async" alt="letter blocks" class="process-image"><div class="era">Estimated UPPC use from the 1920s</div><h3>Letter blocks</h3><p>LETTER BLOCKS: they are majorly into two types i.e single block and the Slag which are casted by the monotype machine and intertype machine respectively.</p><p>NB. The use of these machines at UPPC is estimated to be from 1920s</p></article>
     </div>
   </div>
 </section>
@@ -361,14 +365,14 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
   <div class="container">
     <div class="center"><div class="eyebrow">Gallery</div><h2 class="section-title">Photos &amp; Videos</h2><p class="section-intro center">A visual record can show the machines, people, processes, publications and spaces behind Uganda's print heritage.</p></div>
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/14.JPG" alt="Museum heritage gallery image"><div class="gallery-caption">Print Heritage</div></div>
-      <div class="gallery-item"><img src="images/15.JPG" alt="Historic printing equipment"><div class="gallery-caption">Historical Machines</div></div>
-      <div class="gallery-item"><img src="images/16.JPG" alt="Publishing heritage collection"><div class="gallery-caption">Publishing</div></div>
-      <div class="gallery-item"><img src="images/17.JPG" alt="Historic documents"><div class="gallery-caption">Documents &amp; Archives</div></div>
-      <div class="gallery-item"><img src="images/18.JPG" alt="Printing materials"><div class="gallery-caption">Printing Materials</div></div>
-      <div class="gallery-item"><img src="images/3.JPG" alt="Government printing exhibition"><div class="gallery-caption">Government Printer</div></div>
-      <div class="gallery-item"><img src="images/5.JPG" alt="Independence and state printing exhibition"><div class="gallery-caption">National Story</div></div>
-      <div class="gallery-item"><img src="images/7.JPG" alt="Digital printing exhibition"><div class="gallery-caption">Digital Transformation</div></div>
+      <div class="gallery-item"><img src="images/14.JPG" loading="lazy" decoding="async" alt="Museum heritage gallery image"><div class="gallery-caption">Print Heritage</div></div>
+      <div class="gallery-item"><img src="images/15.JPG" loading="lazy" decoding="async" alt="Historic printing equipment"><div class="gallery-caption">Historical Machines</div></div>
+      <div class="gallery-item"><img src="images/16.JPG" loading="lazy" decoding="async" alt="Publishing heritage collection"><div class="gallery-caption">Publishing</div></div>
+      <div class="gallery-item"><img src="images/17.JPG" loading="lazy" decoding="async" alt="Historic documents"><div class="gallery-caption">Documents &amp; Archives</div></div>
+      <div class="gallery-item"><img src="images/18.JPG" loading="lazy" decoding="async" alt="Printing materials"><div class="gallery-caption">Printing Materials</div></div>
+      <div class="gallery-item"><img src="images/3.JPG" loading="lazy" decoding="async" alt="Government printing exhibition"><div class="gallery-caption">Government Printer</div></div>
+      <div class="gallery-item"><img src="images/5.JPG" loading="lazy" decoding="async" alt="Independence and state printing exhibition"><div class="gallery-caption">National Story</div></div>
+      <div class="gallery-item"><img src="images/7.JPG" loading="lazy" decoding="async" alt="Digital printing exhibition"><div class="gallery-caption">Digital Transformation</div></div>
     </div>
   </div>
 </section>
@@ -377,12 +381,12 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
   <div class="container">
     <div class="center"><div class="eyebrow">Permanent Exhibitions</div><h2 class="section-title">Six Zones, One Story</h2><p class="section-intro center">Six immersive zones trace the evolution of printing, publishing, journalism and public information in Uganda.</p></div>
     <div class="cards">
-      <article class="card"><div class="card-image"><img src="images/missionary.jpg" alt="missionary"></div><div class="card-body"><h3>The Missionary Press</h3><p>Early presses, literacy, local-language printing, primers, hymnals and the people who learned to set type.</p><span class="tag">Origins</span></div></article>
-      <article class="card"><div class="card-image"><img src="images/government.jpg" alt="government"></div><div class="card-body"><h3>The Government Printer</h3><p>Government documents, official forms, printing machinery and the institutional history leading to UPPC.</p><span class="tag">1902–1962</span></div></article>
-      <article class="card"><div class="card-image"><img src="images/nationalist.jpg" alt="nationalist"></div><div class="card-body"><h3>The Nationalist Press</h3><p>Newspapers, pamphlets, political communication and the role of print in national consciousness.</p><span class="tag">Nationalism</span></div></article>
-      <article class="card"><div class="card-image"><img src="images/independence.jpg" alt="independence"></div><div class="card-body"><h3>Independence &amp; State Control</h3><p>Printed information, state publishing and the changing media environment after independence.</p><span class="tag">1962–1986</span></div></article>
-      <article class="card"><div class="card-image"><img src="images/liberalization.jpg" alt="liberalization"></div><div class="card-body"><h3>The Liberalization Era</h3><p>Newspapers, private publishing, photography, desktop publishing and new production technologies.</p><span class="tag">1986–2010</span></div></article>
-      <article class="card"><div class="card-image"><img src="images/digital.jpg" alt="digital"></div><div class="card-body"><h3>Digital Transformation</h3><p>Digital presses, e-publishing, online gazettes, social media and the future of publishing.</p><span class="tag">2010–Today</span></div></article>
+      <article class="card"><div class="card-image"><img src="images/missionary.jpg" loading="lazy" decoding="async" alt="missionary"></div><div class="card-body"><h3>The Missionary Press</h3><p>Early presses, literacy, local-language printing, primers, hymnals and the people who learned to set type.</p><span class="tag">Origins</span></div></article>
+      <article class="card"><div class="card-image"><img src="images/government.jpg" loading="lazy" decoding="async" alt="government"></div><div class="card-body"><h3>The Government Printer</h3><p>Government documents, official forms, printing machinery and the institutional history leading to UPPC.</p><span class="tag">1902–1962</span></div></article>
+      <article class="card"><div class="card-image"><img src="images/nationalist.jpg" loading="lazy" decoding="async" alt="nationalist"></div><div class="card-body"><h3>The Nationalist Press</h3><p>Newspapers, pamphlets, political communication and the role of print in national consciousness.</p><span class="tag">Nationalism</span></div></article>
+      <article class="card"><div class="card-image"><img src="images/independence.jpg" loading="lazy" decoding="async" alt="independence"></div><div class="card-body"><h3>Independence &amp; State Control</h3><p>Printed information, state publishing and the changing media environment after independence.</p><span class="tag">1962–1986</span></div></article>
+      <article class="card"><div class="card-image"><img src="images/liberalization.jpg" loading="lazy" decoding="async" alt="liberalization"></div><div class="card-body"><h3>The Liberalization Era</h3><p>Newspapers, private publishing, photography, desktop publishing and new production technologies.</p><span class="tag">1986–2010</span></div></article>
+      <article class="card"><div class="card-image"><img src="images/digital.jpg" loading="lazy" decoding="async" alt="digital"></div><div class="card-body"><h3>Digital Transformation</h3><p>Digital presses, e-publishing, online gazettes, social media and the future of publishing.</p><span class="tag">2010–Today</span></div></article>
     </div>
   </div>
 </section>
@@ -480,6 +484,27 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
   </div>
 </section>
 
+<section class="section" id="visit">
+  <div class="container">
+    <div class="visit-box">
+      <div>
+        <div class="eyebrow" style="color:var(--yellow)">Visit the Museum</div>
+        <h2>Plan Your Visit</h2>
+        <p>Plan a museum visit, school programme, research consultation, machine demonstration or heritage activity with the Uganda Printing &amp; Publishing Museum.</p>
+        <div style="margin-top:20px" class="buttons">
+          <a class="btn btn-gold" href="#contact">Enquire / Book</a>
+          <a class="btn btn-outline" href="tel:+256326520250">Call UPPC</a>
+        </div>
+      </div>
+      <div class="visit-details">
+        <div class="visit-detail"><strong>Head Office</strong>Plot 8-12 Airport Road, Entebbe</div>
+        <div class="visit-detail"><strong>Kampala Office</strong>Airways House — Ground Floor, Plot 6, Kimathi Avenue</div>
+        <div class="visit-detail"><strong>Contact</strong>arthur.bukenya@uppc.go.ug</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="newsletter">
   <div class="container newsletter-inner">
     <div><h2>Stay Updated</h2><p>Subscribe for exhibition announcements, events, stories and museum news.</p></div>
@@ -503,7 +528,7 @@ footer p,footer li,footer a{color:rgba(255,255,255,.7)}footer a:hover{color:var(
         <a class="social tiktok" href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
       </div>
     </div>
-    <div><h4>Explore</h4><ul><li><a href="#about">About Museum</a></li><li><a href="#history">History</a></li><li><a href="#printing-history">Printing History</a></li><li><a href="#exhibitions">Exhibitions</a></li><li><a href="#gallery">Gallery</a></li></ul></div>
+    <div><h4>Explore</h4><ul><li><a href="#about">About Museum</a></li><li><a href="#printing-history">History</a></li><li><a href="#printing-history">Printing History</a></li><li><a href="#exhibitions">Exhibitions</a></li><li><a href="#gallery">Gallery</a></li></ul></div>
     <div><h4>Visit &amp; Contact</h4><ul><li><a href="#visit">Plan Visit</a></li><li><a href="#events">Events</a></li><li><a href="#news">News</a></li><li><a href="#contact">Contact</a></li><li><a href="mailto:arthur.bukenya@uppc.go.ug">arthur.bukenya@uppc.go.ug</a></li></ul></div>
   </div>
   <div class="footer-bottom"><div class="container">© <span id="year"></span> Uganda Printing &amp; Publishing Museum. <span class="source-note">All supplied museum source material is retained in full in the relevant sections.</span> All rights reserved. &nbsp; | &nbsp; Built around Uganda's print heritage.</div></div>
@@ -522,11 +547,18 @@ menu.addEventListener('click',()=>{navLinks.classList.toggle('open');menu.textCo
 document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menu.textContent='☰'}));
 
 const pageSections=document.querySelectorAll('section[id]');
+let scrollTicking=false;
 window.addEventListener('scroll',()=>{
-  let current='';
-  pageSections.forEach(section=>{if(window.scrollY>=section.offsetTop-130)current=section.id});
-  document.querySelectorAll('.nav-links a').forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+current));
-});
+  if(scrollTicking)return;
+  scrollTicking=true;
+  requestAnimationFrame(()=>{
+    let current='';
+    const y=window.scrollY;
+    pageSections.forEach(section=>{if(y>=section.offsetTop-130)current=section.id});
+    document.querySelectorAll('.nav-links a').forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+current));
+    scrollTicking=false;
+  });
+},{passive:true});
 
 const filterButtons=document.querySelectorAll('.filter'),collectionItems=document.querySelectorAll('.collection-item');
 filterButtons.forEach(button=>button.addEventListener('click',()=>{
