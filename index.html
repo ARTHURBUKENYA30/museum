@@ -1,51 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Uganda Printing &amp; Publishing Museum</title>
+<title>Uganda Printing &amp; Publishing Museum</title>
 
-    <meta name="description"
-        content="Uganda Printing and Publishing Museum — preserving, documenting and exhibiting Uganda's printing and publishing heritage.">
+<meta name="description" content="Uganda Printing and Publishing Museum — preserving, documenting and exhibiting Uganda's printing and publishing heritage.">
 
-    <!-- Preload critical images -->
-    <link rel="preload" as="image" href="./images/chandler.jpg" fetchpriority="high">
-    <link rel="preload" as="image" href="./images/logo.jpg" fetchpriority="high">
+<!-- Performance: load only the critical above-the-fold assets early -->
+<link rel="preload" as="image" href="images/chandler.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="images/logo.jpg" fetchpriority="high">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/styles.css">
 
-    <!-- Resolve relative paths from website root -->
-    <base href="./">
+<!-- Helps the browser resolve relative resources consistently -->
+<base href="./">
 </head>
 
 <body>
 
-<!-- =========================================================
-     TOP BAR
-========================================================= -->
-
+<!-- TOP BAR -->
 <div class="topbar">
     <div class="container">
+        
 
         <div>
             <a href="tel:+256800205520">+256 80 020 5520</a>
             &nbsp; · &nbsp;
             <a href="mailto:info@uppc.go.ug">info@uppc.go.ug</a>
         </div>
-
     </div>
 </div>
 
 
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
+<!-- HEADER -->
 <header>
-
     <div class="container nav">
 
         <a href="./index.html"
@@ -55,7 +46,7 @@
             <span class="logo-frame">
                 <img
                     class="logo"
-                    src="./images/logo.jpg"
+                    src="images/logo.jpg"
                     alt="Uganda Printing and Publishing Museum logo"
                     width="80"
                     height="80"
@@ -72,8 +63,6 @@
         </a>
 
 
-        <!-- Mobile menu button -->
-
         <button
             class="menu"
             id="menu"
@@ -85,8 +74,6 @@
         </button>
 
 
-        <!-- Navigation -->
-
         <ul class="nav-links" id="navLinks">
 
             <li>
@@ -96,7 +83,6 @@
                     Home
                 </a>
             </li>
-
 
             <li class="dropdown">
 
@@ -133,16 +119,13 @@
                     </li>
 
                 </ul>
-
             </li>
-
 
             <li>
                 <a href="./gallery.html">
                     Gallery
                 </a>
             </li>
-
 
             <li>
                 <a href="./contact.html">
@@ -153,15 +136,21 @@
         </ul>
 
     </div>
-
 </header>
 
 
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section class="hero" id="home">
+<!-- HERO -->
+<section
+    class="hero"
+    id="home"
+    style="background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 59, 32, 0.88) 0%,
+            rgba(0, 59, 32, 0.68) 45%,
+            rgba(0, 59, 32, 0.30) 100%
+        ),
+        url('images/chandler.jpg');">
 
     <div class="container">
 
@@ -185,11 +174,15 @@
 
             <div class="buttons">
 
-                <a class="btn btn-gold" href="#collection">
+                <a
+                    class="btn btn-gold"
+                    href="#collection">
                     Explore Collection
                 </a>
 
-                <a class="btn btn-outline" href="./contact.html">
+                <a
+                    class="btn btn-outline"
+                    href="./contact.html">
                     Contact Museum
                 </a>
 
@@ -198,14 +191,10 @@
         </div>
 
     </div>
-
 </section>
 
 
-<!-- =========================================================
-     QUOTE
-========================================================= -->
-
+<!-- QUOTE -->
 <section class="quote">
 
     <blockquote>
@@ -220,10 +209,7 @@
 </section>
 
 
-<!-- =========================================================
-     STATS
-========================================================= -->
-
+<!-- STATS -->
 <section class="stats">
 
     <div class="container stats-grid">
@@ -253,10 +239,7 @@
 </section>
 
 
-<!-- =========================================================
-     WHO WE ARE
-========================================================= -->
-
+<!-- WHO WE ARE -->
 <section class="section" id="who-we-are">
 
     <div class="container">
@@ -349,10 +332,7 @@
 </section>
 
 
-<!-- =========================================================
-     WHY THE MUSEUM MATTERS
-========================================================= -->
-
+<!-- WHY THE MUSEUM MATTERS -->
 <section class="section cream" id="why-museum-matters">
 
     <div class="container">
@@ -380,7 +360,6 @@
         <div class="cards">
 
             <article class="card">
-
                 <div class="card-body">
 
                     <span class="tag">
@@ -398,12 +377,10 @@
                     </p>
 
                 </div>
-
             </article>
 
 
             <article class="card">
-
                 <div class="card-body">
 
                     <span class="tag">
@@ -421,12 +398,10 @@
                     </p>
 
                 </div>
-
             </article>
 
 
             <article class="card">
-
                 <div class="card-body">
 
                     <span class="tag">
@@ -444,7 +419,6 @@
                     </p>
 
                 </div>
-
             </article>
 
         </div>
@@ -454,10 +428,7 @@
 </section>
 
 
-<!-- =========================================================
-     COLLECTION
-========================================================= -->
-
+<!-- COLLECTION -->
 <section class="section cream" id="collection">
 
     <div class="container">
@@ -513,13 +484,14 @@
         <div class="collection-grid">
 
 
-            <article class="card collection-item"
-                     data-category="machines">
+            <article
+                class="card collection-item"
+                data-category="machines">
 
                 <div class="card-image">
 
                     <img
-                        src="./images/chandler.jpg"
+                        src="images/chandler.jpg"
                         alt="Chandler and Price printing press"
                         loading="lazy"
                         decoding="async"
@@ -556,8 +528,9 @@
             </article>
 
 
-            <article class="card collection-item"
-                     data-category="machines">
+            <article
+                class="card collection-item"
+                data-category="machines">
 
                 <div class="card-image">
 
@@ -599,8 +572,9 @@
             </article>
 
 
-            <article class="card collection-item"
-                     data-category="publishing">
+            <article
+                class="card collection-item"
+                data-category="publishing">
 
                 <div class="card-image">
 
@@ -642,8 +616,9 @@
             </article>
 
 
-            <article class="card collection-item"
-                     data-category="documents">
+            <article
+                class="card collection-item"
+                data-category="documents">
 
                 <div class="card-image">
 
@@ -685,8 +660,9 @@
             </article>
 
 
-            <article class="card collection-item"
-                     data-category="gazettes">
+            <article
+                class="card collection-item"
+                data-category="gazettes">
 
                 <div class="card-image">
 
@@ -729,8 +705,9 @@
             </article>
 
 
-            <article class="card collection-item"
-                     data-category="materials">
+            <article
+                class="card collection-item"
+                data-category="materials">
 
                 <div class="card-image">
 
@@ -778,10 +755,7 @@
 </section>
 
 
-<!-- =========================================================
-     SIX EXHIBITION ZONES
-========================================================= -->
-
+<!-- SIX EXHIBITION ZONES -->
 <section class="section" id="six-zones">
 
     <div class="container">
@@ -1017,10 +991,7 @@
 </section>
 
 
-<!-- =========================================================
-     HISTORICAL MACHINES
-========================================================= -->
-
+<!-- HISTORICAL MACHINES -->
 <section class="section paper-bg" id="machines">
 
     <div class="container">
@@ -1242,10 +1213,7 @@
 </section>
 
 
-<!-- =========================================================
-     NEWSLETTER
-========================================================= -->
-
+<!-- NEWSLETTER -->
 <section class="newsletter">
 
     <div class="container newsletter-inner">
@@ -1288,10 +1256,7 @@
 </section>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
+<!-- FOOTER -->
 <footer>
 
     <div class="container footer-grid">
@@ -1369,10 +1334,7 @@
 </footer>
 
 
-<!-- =========================================================
-     DETAILS MODAL
-========================================================= -->
-
+<!-- DETAILS MODAL -->
 <div
     class="modal"
     id="modal"
@@ -1397,7 +1359,7 @@
 </div>
 
 
-<!-- JavaScript -->
+<!-- Load JavaScript after the page content -->
 <script src="./js/script.js" defer></script>
 
 </body>
