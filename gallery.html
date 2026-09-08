@@ -1,529 +1,131 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<meta charset="UTF-8">
+    <title>Gallery | Uganda Printing & Publishing Museum</title>
 
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
+    <meta name="description"
+          content="Photos and videos from the Uganda Printing & Publishing Museum project.">
 
-<title>
-    Gallery | Uganda Printing &amp; Publishing Museum
-</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
-<meta
-    name="description"
-    content="Photos and videos from the Uganda Printing &amp; Publishing Museum project."
->
-
-<!-- Main CSS -->
-<link
-    rel="stylesheet"
-    href="./css/styles.css"
->
-```
-
+    <!-- Load only the first visible gallery image immediately -->
+    <link rel="preload"
+          as="image"
+          href="images/14.webp"
+          fetchpriority="high">
 </head>
 
 <body>
 
-<!-- =====================================================
-     TOP BAR
-===================================================== -->
-
+<!-- TOP BAR -->
 <div class="topbar">
+    <div class="container">
+        <div>Est. 1902 — Uganda's Print Heritage</div>
 
-```
-<div class="container">
-
-    <div>
-        Est. 1902 — Uganda's Print Heritage
+        <div>
+            <a href="tel:+256800205520">+256 80 020 5520</a>
+            &nbsp; · &nbsp;
+            <a href="mailto:info@uppc.go.ug">info@uppc.go.ug</a>
+        </div>
     </div>
-
-    <div>
-
-        <a href="tel:+256800205520">
-            +256 80 020 5520
-        </a>
-
-        &nbsp; · &nbsp;
-
-        <a href="mailto:info@uppc.go.ug">
-            info@uppc.go.ug
-        </a>
-
-    </div>
-
-</div>
-```
-
 </div>
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
 
+<!-- HEADER -->
 <header>
-
-```
-<div class="container nav">
-
-
-    <!-- BRAND -->
-
-    <a
-        href="./index.html"
-        class="brand"
-        aria-label="Uganda Printing and Publishing Museum home"
-    >
-
-        <span class="logo-frame">
-
-            <img
-                class="logo"
-                src="./images/logo.jpg"
-                alt="Uganda Printing and Publishing Museum logo"
-                width="80"
-                height="80"
-                decoding="async"
-                fetchpriority="high"
-            >
-
-        </span>
-
-
-        <span>
-
-            <strong>
-                UGANDA
-            </strong>
-
-            <strong>
-                Printing &amp; Publishing Museum
-            </strong>
-
-            <small>
-                Preserving Uganda's print and publishing heritage
-            </small>
-
-        </span>
-
-    </a>
-
-
-
-    <!-- MOBILE MENU -->
-
-    <button
-        class="menu"
-        id="menu"
-        type="button"
-        aria-label="Open menu"
-        aria-controls="navLinks"
-        aria-expanded="false"
-    >
-        ☰
-    </button>
-
-
-
-    <!-- NAVIGATION -->
-
-    <ul
-        class="nav-links"
-        id="navLinks"
-    >
-
-        <li>
-
-            <a href="./index.html">
-                Home
-            </a>
-
-        </li>
-
-
-        <li class="dropdown">
-
-            <a
-                class="dropdown-toggle"
-                href="./about.html"
-                aria-haspopup="true"
-            >
-                About ▾
-            </a>
-
-
-            <ul class="dropdown-menu">
-
-                <li>
-                    <a href="./about.html#mission">
-                        Mission
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./about.html#vision">
-                        Vision
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./about.html#timeline">
-                        Historical Timeline
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./about.html#team">
-                        People Behind the Mission
-                    </a>
-                </li>
-
-            </ul>
-
-        </li>
-
-
-        <li>
-
-            <a
-                class="active"
-                aria-current="page"
-                href="./gallery.html"
-            >
-                Gallery
-            </a>
-
-        </li>
-
-
-        <li>
-
-            <a href="./contact.html">
-                Contact
-            </a>
-
-        </li>
-
-    </ul>
-
-</div>
-```
-
-</header>
-
-<!-- =====================================================
-     PAGE INTRO
-===================================================== -->
-
-<section class="section">
-
-```
-<div class="container center">
-
-    <div class="eyebrow">
-        Gallery
-    </div>
-
-
-    <h1 class="section-title">
-        Photos &amp; Videos
-    </h1>
-
-
-    <p class="section-intro center">
-
-        A visual record showing the machines,
-        people, processes, publications and spaces
-        behind Uganda's print heritage.
-
-    </p>
-
-</div>
-```
-
-</section>
-
-<!-- =====================================================
-     GALLERY
-===================================================== -->
-
-<section class="section cream">
-
-```
-<div class="container">
-
-
-    <div class="gallery-grid">
-
-
-        <!-- =================================================
-             IMAGE 1 — ABOVE THE FOLD
-             Loads immediately
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/14.JPG"
-                alt="Print heritage"
-                width="800"
-                height="600"
-                decoding="async"
-                fetchpriority="high"
-            >
-
-            <div class="gallery-caption">
-                Print Heritage
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 2
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/15.JPG"
-                alt="Historical printing machines"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                Historical Machines
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 3
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/16.JPG"
-                alt="Publishing heritage"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                Publishing Heritage
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 4
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/17.JPG"
-                alt="Historical documents and archives"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                Documents &amp; Archives
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 5
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/18.JPG"
-                alt="Historical printing materials"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                Printing Materials
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 6
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/3.JPG"
-                alt="Government Printer"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                Government Printer
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 7
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/5.JPG"
-                alt="National printing story"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                National Story
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             IMAGE 8
-        ================================================== -->
-
-        <div class="gallery-item">
-
-            <img
-                src="./images/7.JPG"
-                alt="Digital transformation"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-            >
-
-            <div class="gallery-caption">
-                Digital Transformation
-            </div>
-
-        </div>
-
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-```
-<div class="container footer-grid">
-
-
-    <!-- FOOTER BRAND -->
-
-    <div>
-
-        <h3>
-            UGANDA
-        </h3>
-
-        <h4>
-            Printing &amp; Publishing Museum
-        </h4>
-
-        <p>
-
-            Dedicated to preserving,
-            interpreting and celebrating
-            Uganda's printing and publishing
-            heritage from the missionary era
-            to the digital age.
-
-        </p>
-
-    </div>
-
-
-
-    <!-- FOOTER LINKS -->
-
-    <div>
-
-        <h4>
-            Explore
-        </h4>
-
-
-        <ul>
+    <div class="container nav">
+
+        <a href="index.html" class="brand">
+
+            <span class="logo-frame">
+                <img
+                    class="logo"
+                    src="images/logo.jpg"
+                    alt="Uganda Printing and Publishing Museum logo"
+                    width="80"
+                    height="80"
+                    decoding="async"
+                    fetchpriority="high">
+            </span>
+
+            <span>
+                <strong>UGANDA</strong>
+                <strong>Printing &amp; Publishing Museum</strong>
+                <small>
+                    Preserving Uganda's print and publishing heritage
+                </small>
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu"
+            id="menu"
+            aria-label="Open menu">
+            ☰
+        </button>
+
+
+        <ul class="nav-links" id="navLinks">
 
             <li>
-                <a href="./index.html">
-                    Home
-                </a>
+                <a href="index.html">Home</a>
             </li>
 
-            <li>
-                <a href="./about.html">
-                    About
-                </a>
-            </li>
+            <li class="dropdown">
 
-            <li>
                 <a
-                    href="./gallery.html"
-                    aria-current="page"
-                >
+                    class="dropdown-toggle"
+                    href="about.html">
+                    About ▾
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="about.html#mission">
+                            Mission
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html#vision">
+                            Vision
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html#timeline">
+                            Historical Timeline
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html#team">
+                            People Behind the Mission
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+                <a class="active" href="gallery.html">
                     Gallery
                 </a>
             </li>
 
+
             <li>
-                <a href="./contact.html">
+                <a href="contact.html">
                     Contact
                 </a>
             </li>
@@ -531,60 +133,268 @@
         </ul>
 
     </div>
+</header>
 
 
-</div>
+<!-- PAGE INTRO -->
+<section class="section">
 
+    <div class="container center">
 
+        <div class="eyebrow">
+            Gallery
+        </div>
 
-<!-- FOOTER BOTTOM -->
+        <h1 class="section-title">
+            Photos &amp; Videos
+        </h1>
 
-<div class="footer-bottom">
-
-    <div class="container">
-
-        ©
-        <span id="year"></span>
-        Uganda Printing &amp; Publishing Museum.
-        All rights reserved.
+        <p class="section-intro center">
+            A visual record showing the machines, people, processes,
+            publications and spaces behind Uganda's print heritage.
+        </p>
 
     </div>
 
-</div>
-```
+</section>
+
+
+<!-- GALLERY -->
+<section class="section cream">
+
+    <div class="container">
+
+        <div class="gallery-grid">
+
+
+            <!-- FIRST IMAGE - LOAD IMMEDIATELY -->
+            <div class="gallery-item">
+
+                <img
+                    src="images/14.webp"
+                    alt="Print heritage"
+                    width="800"
+                    height="600"
+                    decoding="async"
+                    fetchpriority="high">
+
+                <div class="gallery-caption">
+                    Print Heritage
+                </div>
+
+            </div>
+
+
+            <!-- REMAINING IMAGES - LAZY LOAD -->
+            <div class="gallery-item">
+
+                <img
+                    src="images/15.webp"
+                    alt="Historical machines"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Historical Machines
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/16.webp"
+                    alt="Publishing heritage"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Publishing Heritage
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/17.webp"
+                    alt="Documents and archives"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Documents &amp; Archives
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/18.webp"
+                    alt="Printing materials"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Printing Materials
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/3.webp"
+                    alt="Government Printer"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Government Printer
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/5.webp"
+                    alt="National story"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Uganda's National Story
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/7.webp"
+                    alt="Digital transformation"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="gallery-caption">
+                    Digital Transformation
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>UGANDA</h3>
+
+            <h4>
+                Printing &amp; Publishing Museum
+            </h4>
+
+            <p>
+                Dedicated to preserving, interpreting and celebrating
+                Uganda's printing and publishing heritage from the
+                missionary era to the digital age.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Explore
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            ©
+            <span id="year"></span>
+            Uganda Printing &amp; Publishing Museum.
+            All rights reserved.
+
+        </div>
+
+    </div>
 
 </footer>
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
 
+<!-- JavaScript -->
 <script
-    src="./js/script.js"
+    src="js/script.js"
     defer>
-</script>
-
-<!-- =====================================================
-     YEAR FALLBACK
-===================================================== -->
-
-<script>
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-        const year =
-            document.getElementById("year");
-
-        if (year) {
-
-            year.textContent =
-                new Date().getFullYear();
-
-        }
-
-    });
-
 </script>
 
 </body>
 </html>
+```
