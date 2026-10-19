@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UPPC Print Heritage Museum</title>
+
+<meta name="description" content="Uganda Printing and Publishing Museum — preserving, documenting and exhibiting Uganda's printing and publishing heritage.">
+
+<!-- Performance: load only the critical above-the-fold assets early -->
+<link rel="preload" as="image" href="images/chandler.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="images/logo.jpg" fetchpriority="high">
+
+<link rel="stylesheet" href="./css/styles.css">
+
+<!-- Helps the browser resolve relative resources consistently -->
+<base href="./">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="container">
+        
+
+        <div>
+            <a href="tel:+256800205520">+256 80 020 5520</a>
+            &nbsp; · &nbsp;
+            <a href="mailto:info@uppc.go.ug">info@uppc.go.ug</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<header>
+    <div class="container nav">
+
+        <a href="./index.html"
+           class="brand"
+           aria-label="Uganda Printing and Publishing Museum home">
+
+            <span class="logo-frame">
+                <img
+                    class="logo"
+                    src="images/logo.jpg"
+                    alt="Uganda Printing and Publishing Museum logo"
+                    width="80"
+                    height="80"
+                    decoding="async"
+                    fetchpriority="high">
+            </span>
+
+            <span>
+                <strong>UPPC PRINT HERITAGE MUSEUM</strong>
+                <small>Preserving Uganda's Printed History Since 1902</small>
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu"
+            id="menu"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="navLinks"
+            aria-expanded="false">
+            ☰
+        </button>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a class="active"
+                   aria-current="page"
+                   href="./index.html">
+                    Home
+                </a>
+            </li>
+
+            <li class="dropdown">
+
+                <a class="dropdown-toggle"
+                   href="./about.html"
+                   aria-haspopup="true">
+                    About Us▾
+                </a>
+
+                <ul class="dropdown-menu">
+
+
+                    <li>
+                        <a href="./about.html#timeline">
+                            Historical Timeline
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./about.html#team">
+                            Our Leadership
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+             <li>
+                <a href="./collection.html">
+                    collection
+                </a>
+            </li>
+            
+            <li>
+                <a href="./events.html">
+                    Events
+                </a>
+            </li>
+
+            <li>
+                <a href="./news.html">
+                    News
+                </a>
+            </li>
+
+            <li>
+                <a href="./contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</header>
+
+
+<!-- HOME HERO SLIDESHOW -->
+<section class="hero hero-slider" id="home" aria-label="Museum highlights">
+    <div class="hero-slide active" style="background-image: linear-gradient(90deg, rgba(0, 59, 32, .88), rgba(0, 59, 32, .34)), url('images/chandler.jpg');" aria-hidden="false"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(0, 59, 32, .88), rgba(0, 59, 32, .34)), url('images/hand.jpg');" aria-hidden="true"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(0, 59, 32, .88), rgba(0, 59, 32, .34)), url('images/type.jpg');" aria-hidden="true"></div>
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <span class="hero-kicker">Uganda's Print Heritage</span>
+            <h1>Where Words <span>Shaped a Nation</span></h1>
+            <p>Discover Uganda's printing and publishing journey — from historic presses and official publications to the people and materials that shaped public information.</p>
+        </div>
+    </div>
+    <button class="hero-arrow hero-prev" type="button" aria-label="Previous slide">&#10094;</button>
+    <button class="hero-arrow hero-next" type="button" aria-label="Next slide">&#10095;</button>
+    <div class="hero-dots" aria-label="Choose slide">
+        <button class="hero-dot active" type="button" aria-label="Show slide 1" aria-current="true"></button>
+        <button class="hero-dot" type="button" aria-label="Show slide 2"></button>
+        <button class="hero-dot" type="button" aria-label="Show slide 3"></button>
+    </div>
+</section>
+
+
+<!-- QUOTE -->
+<section class="quote">
+
+    <blockquote>
+        “The printing press is the greatest weapon in the armoury
+        of the modern architect, and we must use it to build a nation.”
+    </blockquote>
+
+    <cite>
+        — Inspired by Uganda's Publishing Pioneers
+    </cite>
+
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <strong>120+</strong>
+            <span>Years of Print Heritage</span>
+        </div>
+
+        <div class="stat">
+            <strong>2+</strong>
+            <span>Collection Areas</span>
+        </div>
+
+        <div class="stat">
+            <strong>6</strong>
+            <span>Exhibition Zones</span>
+        </div>
+
+        <div class="stat">
+            <strong>1902</strong>
+            <span>Government Printer Origins</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <div class="container newsletter-inner">
+
+        <div>
+
+            <h2>
+                Stay Updated
+            </h2>
+
+            <p>
+                Subscribe for exhibition announcements,
+                events, stories and museum news.
+            </p>
+
+        </div>
+
+
+        <form
+            class="newsletter-form"
+            id="newsletterForm">
+
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Your email address"
+                autocomplete="email"
+                required>
+
+            <button
+                class="btn btn-black"
+                type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                UPPC
+            </h3>
+
+            <h4>
+                PRINT HERITAGE MUSEUM
+            </h4>
+
+            <p>
+               Preserving Uganda's Printed History Since 1902
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Explore
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="./index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./collection.html">
+                        Collection
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="./events.html">
+                        Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./news.html">
+                        News
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            © <span id="year"></span>
+            UPPC Print Heritage Museum.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- DETAILS MODAL -->
+<div
+    class="modal"
+    id="modal"
+    aria-hidden="true">
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            type="button"
+            aria-label="Close">
+            ×
+        </button>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalText"></p>
+
+    </div>
+
+</div>
+
+
+<!-- Load JavaScript after the page content -->
+<script src="./js/script.js" defer></script>
+
+</body>
+</html>
