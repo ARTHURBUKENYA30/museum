@@ -4,230 +4,323 @@
 <header><div class="container nav"><a href="index.html" class="brand"><span class="logo-frame"><img class="logo" src="images/logo.jpg" alt="Museum logo" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='grid'"><span id="logoFallback" class="logo-fallback">UG</span></span><span><strong>UPPC PRINT HERITAGE MUSEUM</strong><small>Preserving Uganda's Printed History Since 1902</small></span></a><button class="menu" id="menu" aria-label="Open menu">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li class="dropdown"><a class="dropdown-toggle" href="about.html">About Us▾</a><ul class="dropdown-menu"><li><a href="about.html#timeline">Historical Timeline</a></li><li><a href="about.html#team">Our Leadership</a></li></ul></li><li><a class="active" href="collection.html">Collection</a></li><li><a href="events.html">Events</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div></header>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- HISTORICAL MACHINES -->
-<section class="section paper-bg" id="machines">
+<!-- COLLECTION -->
+<section class="section cream" id="collection">
 
     <div class="container">
 
         <div class="center">
 
             <div class="eyebrow">
-                Historical Machines
+                Our Treasures
             </div>
 
             <h2 class="section-title">
-                Machines That Made the Page
+                Museum Collection
             </h2>
 
             <p class="section-intro center">
-                Explore the historic technologies that turned text,
-                images and ideas into printed material.
+                Explore the proposed collection structure, including
+                printing machines, publishing equipment, historical documents,
+                official gazettes and printing materials.
             </p>
 
         </div>
 
 
-        <div class="process">
+        <div class="collection-filter">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="machines">
+                Printing Machines
+            </button>
+
+            <button class="filter" data-filter="publishing">
+                Publishing Equipment
+            </button>
+
+            <button class="filter" data-filter="documents">
+                Historical Documents
+            </button>
+
+            <button class="filter" data-filter="gazettes">
+                Official Gazettes
+            </button>
+
+            <button class="filter" data-filter="materials">
+                Printing Materials
+            </button>
+
+        </div>
 
 
-            <article class="process-card">
+        <div class="collection-grid">
 
-                <img
-                    src="./images/25.JPG"
-                    class="process-image"
-                    alt="Intertype machine"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
 
-                <div class="era">
-                    1912–1976
+            <article
+                class="card collection-item"
+                data-category="machines">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/chandler.jpg"
+                        alt="Chandler and Price printing press"
+                        loading="lazy"
+                        decoding="async"
+                        width="800"
+                        height="600">
+
                 </div>
 
-                <h3>
-                    INTERTYPE
-                </h3>
+                <div class="card-body">
 
-                <p>
-                    Was mostly used during the budgeting period because of its speed.
-                </p>
+                    <span class="tag">
+                        Printing Machines
+                    </span>
 
-                <p>
-                    Manufactured between 1912 and 1976.
-                </p>
+                    <h3>
+                        Heidelberg Platen Press
+                    </h3>
+
+                    <p>
+                        Historic letterpress machinery representing
+                        the industrial era of commercial and document printing.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="details"
+                        data-title="Heidelberg Platen Press"
+                        data-text="Historic letterpress machinery representing the industrial era of commercial and document printing.">
+                        View Details →
+                    </a>
+
+                </div>
 
             </article>
 
 
-            <article class="process-card">
+            <article
+                class="card collection-item"
+                data-category="machines">
 
-                <img
-                    src="./images/27.JPG"
-                    class="process-image"
-                    alt="Monotype machine"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
+                <div class="card-image">
 
-                <div class="era">
-                    Commercial hot-metal system from 1900
+                    <img
+                        src="./images/hand.jpg"
+                        alt="Hand-fed platen press"
+                        loading="lazy"
+                        decoding="async"
+                        width="800"
+                        height="600">
+
                 </div>
 
-                <h3>
-                    MONOTYPE
-                </h3>
+                <div class="card-body">
 
-                <p>
-                    Was used mostly in printing of books. The commercial
-                    hot-metal system, featuring the keyboard and casting
-                    machine, was brought to market in 1900.
-                </p>
+                    <span class="tag">
+                        Printing Machines
+                    </span>
+
+                    <h3>
+                        Hand-Fed Platen Press
+                    </h3>
+
+                    <p>
+                        Early printing machinery associated with small print
+                        shops, educational publishing and heritage demonstrations.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="details"
+                        data-title="Hand-Fed Platen Press"
+                        data-text="Early printing machinery associated with small print shops, educational publishing and heritage demonstrations.">
+                        View Details →
+                    </a>
+
+                </div>
 
             </article>
 
 
-            <article class="process-card">
+            <article
+                class="card collection-item"
+                data-category="publishing">
 
-                <img
-                    src="./images/3.JPG"
-                    class="process-image"
-                    alt="Monotype caster"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
+                <div class="card-image">
 
-                <div class="era">
-                    1900–late 1960s; last Caster manufactured in 1989
+                    <img
+                        src="./images/heidelberg.jpg"
+                        alt="Chandler and Price press"
+                        loading="lazy"
+                        decoding="async"
+                        width="800"
+                        height="600">
+
                 </div>
 
-                <h3>
-                    MONOTYPE-CASTER
-                </h3>
+                <div class="card-body">
 
-                <p>
-                    Was mostly used during finance bill work which had lots of figures.
-                </p>
+                    <span class="tag">
+                        Publishing Equipment
+                    </span>
+
+                    <h3>
+                        Chandler &amp; Price Press
+                    </h3>
+
+                    <p>
+                        A treadle press representing mid-20th-century
+                        print-shop technology and hands-on production.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="details"
+                        data-title="Chandler & Price Press"
+                        data-text="A treadle press representing mid-20th-century print-shop technology and hands-on production.">
+                        View Details →
+                    </a>
+
+                </div>
 
             </article>
 
 
-            <article class="process-card">
+            <article
+                class="card collection-item"
+                data-category="documents">
 
-                <img
-                    src="./images/8.JPG"
-                    class="process-image"
-                    alt="Camera used for image transfer and processing"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
+                <div class="card-image">
 
-                <div class="era">
-                    Image transfer and processing
+                    <img
+                        src="./images/historic.jpg"
+                        alt="Historic books and documents"
+                        loading="lazy"
+                        decoding="async"
+                        width="800"
+                        height="600">
+
                 </div>
 
-                <h3>
-                    CAMERA
-                </h3>
+                <div class="card-body">
 
-                <p>
-                    Was majorly used for image transfer and processing.
-                </p>
+                    <span class="tag">
+                        Historical Documents
+                    </span>
+
+                    <h3>
+                        Historic Books &amp; Documents
+                    </h3>
+
+                    <p>
+                        Books, manuscripts and documentary material connected
+                        to Uganda's early literacy, education and publishing history.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="details"
+                        data-title="Historic Books & Documents"
+                        data-text="Books, manuscripts and documentary material connected to Uganda's early literacy, education and publishing history.">
+                        View Details →
+                    </a>
+
+                </div>
 
             </article>
 
 
-            <article class="process-card">
+            <article
+                class="card collection-item"
+                data-category="gazettes">
 
-                <img
-                    src="./images/16.JPG"
-                    class="process-image"
-                    alt="Ludlow photograph machine"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
+                <div class="card-image">
 
-                <div class="era">
-                    Manufactured starting in 1912
+                    <img
+                        src="./images/uganda.jpg"
+                        alt="Uganda Gazette collection"
+                        loading="lazy"
+                        decoding="async"
+                        width="800"
+                        height="600">
+
                 </div>
 
-                <h3>
-                    LUDLOW PHOTOGRAPH MACHINE
-                </h3>
+                <div class="card-body">
 
-                <p>
-                    Designed to type big letters suitable for posters,
-                    letterheads, IDs and similar work.
-                </p>
+                    <span class="tag">
+                        Official Gazette
+                    </span>
+
+                    <h3>
+                        Uganda Gazette Collection
+                    </h3>
+
+                    <p>
+                        Official publications containing public notices,
+                        legal notices, proclamations, appointments, bills
+                        and other government information.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="details"
+                        data-title="Uganda Gazette Collection"
+                        data-text="A core documentary collection for understanding official public information and legal publication in Uganda.">
+                        View Details →
+                    </a>
+
+                </div>
 
             </article>
 
 
-            <article class="process-card">
+            <article
+                class="card collection-item"
+                data-category="materials">
 
-                <img
-                    src="./images/20.JPG"
-                    class="process-image"
-                    alt="Vicobold printing machine"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
+                <div class="card-image">
 
-                <div class="era">
-                    Mid-1920s through the 1950s
+                    <img
+                        src="./images/type.jpg"
+                        alt="Printing type and letter blocks"
+                        loading="lazy"
+                        decoding="async"
+                        width="800"
+                        height="600">
+
                 </div>
 
-                <h3>
-                    VICOBOLD
-                </h3>
+                <div class="card-body">
 
-                <p>
-                    Used for relief printing, embossing, debossing and foil stamping.
-                </p>
+                    <span class="tag">
+                        Printing Materials
+                    </span>
 
-            </article>
+                    <h3>
+                        Type, Letter Blocks &amp; Print Materials
+                    </h3>
 
+                    <p>
+                        Metal type, letter blocks, slugs, composing tools,
+                        paper, inks and other materials used in the printing process.
+                    </p>
 
-            <article class="process-card">
+                    <a
+                        href="#"
+                        class="details"
+                        data-title="Type, Letter Blocks & Print Materials"
+                        data-text="The collection includes examples of type and letter blocks, including single blocks and slugs cast through Monotype and Intertype systems.">
+                        View Details →
+                    </a>
 
-                <img
-                    src="./images/68.JPG"
-                    class="process-image"
-                    alt="Letter blocks"
-                    loading="lazy"
-                    decoding="async"
-                    width="800"
-                    height="600">
-
-                <div class="era">
-                    Estimated UPPC use from the 1920s
                 </div>
-
-                <h3>
-                    LETTER BLOCKS
-                </h3>
-
-                <p>
-                    Includes single blocks and slugs cast by Monotype
-                    and Intertype systems.
-                </p>
 
             </article>
 
@@ -236,7 +329,6 @@
     </div>
 
 </section>
-
 
 <footer><div class="container footer-grid"><div><h3>UPPC</h3><h4>PRINT HERITAGE MUSEUM</h4><p>Preserving Uganda's Printed History Since 1902</p></div><div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="collection.html">Collection</a></li><li><a href="events.html">Events</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-bottom"><div class="container">© <span id="year"></span> UPPC Print Heritage Museum. All rights reserved.</div></div></footer>
 <script src="js/script.js"></script></body></html>
