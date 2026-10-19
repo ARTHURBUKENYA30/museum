@@ -140,79 +140,37 @@
 
 
 
-/* HERO: Image moving from left to right */
-.hero {
-    position: relative;
-    min-height: 480px;
-    overflow: hidden;
-    background-color: #003b20;
-    background-image: none !important;
-    display: flex;
-    align-items: center;
-}
+<!-- HERO WITH MOVING BACKGROUND IMAGE -->
+<section class="hero" id="home">
 
-.hero-moving-image {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    overflow: hidden;
-    pointer-events: none;
-}
+    <div class="hero-moving-image">
+        <img
+            src="images/chandler.jpg"
+            alt=""
+            fetchpriority="high">
+    </div>
 
-.hero-moving-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    animation: imageMoveRight 15s linear infinite;
-}
+    <div class="hero-moving-overlay"></div>
 
-.hero-moving-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: linear-gradient(
-        90deg,
-        rgba(0, 59, 32, 0.88),
-        rgba(0, 59, 32, 0.58),
-        rgba(0, 59, 32, 0.30)
-    );
-    pointer-events: none;
-}
+    <div class="container">
+        <div class="hero-content">
 
-.hero .container {
-    position: relative;
-    z-index: 2;
-}
+            <h1>
+                Where Words
+                <span>Shaped a Nation</span>
+            </h1>
 
-@keyframes imageMoveRight {
-    0% {
-        transform: translateX(-3%);
-    }
+            <p>
+                Discover Uganda's printing and publishing journey —
+                from missionary presses and the Government Printer to
+                modern security printing, publishing, digital archives
+                and the future of public information.
+            </p>
 
-    100% {
-        transform: translateX(3%);
-    }
-}
+        </div>
+    </div>
 
-@media (max-width: 768px) {
-    .hero {
-        min-height: 420px;
-    }
-
-    .hero-moving-image img {
-        object-fit: contain;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .hero-moving-image img {
-        animation: none;
-    }
-}
+</section>
 
 <!-- QUOTE -->
 <section class="quote">
