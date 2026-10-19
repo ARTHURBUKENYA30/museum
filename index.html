@@ -140,47 +140,79 @@
 
 
 
-<!-- HERO -->
-<section
-    class="hero"
-    id="home"
-    style="background-image:
-        linear-gradient(
-            90deg,
-            rgba(0, 59, 32, 0.88) 0%,
-            rgba(0, 59, 32, 0.68) 45%,
-            rgba(0, 59, 32, 0.30) 100%
-        ),
-        url('images/chandler.jpg');">
+/* HERO: Image moving from left to right */
+.hero {
+    position: relative;
+    min-height: 480px;
+    overflow: hidden;
+    background-color: #003b20;
+    background-image: none !important;
+    display: flex;
+    align-items: center;
+}
 
-    <div class="container">
+.hero-moving-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
 
-        <div class="hero-content">
+.hero-moving-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    animation: imageMoveRight 15s linear infinite;
+}
 
-     
+.hero-moving-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 59, 32, 0.88),
+        rgba(0, 59, 32, 0.58),
+        rgba(0, 59, 32, 0.30)
+    );
+    pointer-events: none;
+}
 
-            <h1>
-                Where Words
-                <span>Shaped a Nation</span>
-            </h1>
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
 
-            <p>
-                Discover Uganda's printing and publishing journey —
-                from missionary presses and the Government Printer to
-                modern security printing, publishing, digital archives
-                and the future of public information.
-            </p>
+@keyframes imageMoveRight {
+    0% {
+        transform: translateX(-3%);
+    }
 
-            <div class="buttons">
+    100% {
+        transform: translateX(3%);
+    }
+}
 
-               
-            </div>
+@media (max-width: 768px) {
+    .hero {
+        min-height: 420px;
+    }
 
-        </div>
+    .hero-moving-image img {
+        object-fit: contain;
+    }
+}
 
-    </div>
-</section>
-
+@media (prefers-reduced-motion: reduce) {
+    .hero-moving-image img {
+        animation: none;
+    }
+}
 
 <!-- QUOTE -->
 <section class="quote">
