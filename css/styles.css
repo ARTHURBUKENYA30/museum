@@ -23,18 +23,27 @@ header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.98);borde
 
 
 
-/* Apply Sans-serif font throughout the website */
+/* =====================================================
+   WEBSITE TYPOGRAPHY
+   Purpose: Make all website text use a sans-serif font.
+   Font priority: Arial, then Helvetica, then sans-serif.
+   ===================================================== */
+
+/* Default font for the whole page */
 html,
-body,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Apply the font to headings, paragraphs, links and other elements */
+body * {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Keep form controls consistent with the website */
 button,
 input,
 textarea,
 select {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
-
-/* Ensure headings, paragraphs, links and other elements inherit it */
-body * {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
