@@ -139,24 +139,42 @@
 </header>
 
 
-<!-- HERO -->
-<section
-    class="hero"
-    id="home"
-    style="background-image:
-        linear-gradient(
-            90deg,
-            rgba(0, 59, 32, 0.88) 0%,
-            rgba(0, 59, 32, 0.68) 45%,
-            rgba(0, 59, 32, 0.30) 100%
-        ),
-        url('images/chandler.jpg');">
 
-    <div class="container">
+<!-- HERO IMAGE SLIDER: Three slides using the same image -->
+<section class="hero hero-slider" id="home">
 
+    <!-- Slide 1 -->
+    <div class="hero-slide active">
+        <img
+            src="images/chandler.jpg"
+            alt="Historic printing press at the UPPC Print Heritage Museum"
+            fetchpriority="high"
+            decoding="async">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide">
+        <img
+            src="images/chandler.jpg"
+            alt="Historic printing press at the UPPC Print Heritage Museum"
+            loading="lazy"
+            decoding="async">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide">
+        <img
+            src="images/chandler.jpg"
+            alt="Historic printing press at the UPPC Print Heritage Museum"
+            loading="lazy"
+            decoding="async">
+    </div>
+
+    <!-- Dark overlay and heading -->
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
         <div class="hero-content">
-
-     
 
             <h1>
                 Where Words
@@ -170,16 +188,28 @@
                 and the future of public information.
             </p>
 
-            <div class="buttons">
-
-               
-            </div>
-
         </div>
-
     </div>
-</section>
 
+    <!-- Three slide indicators -->
+    <div class="hero-dots" aria-label="Choose a hero slide">
+        <button class="hero-dot active"
+                type="button"
+                aria-label="Show slide 1"
+                aria-pressed="true"></button>
+
+        <button class="hero-dot"
+                type="button"
+                aria-label="Show slide 2"
+                aria-pressed="false"></button>
+
+        <button class="hero-dot"
+                type="button"
+                aria-label="Show slide 3"
+                aria-pressed="false"></button>
+    </div>
+
+</section>
 
 <!-- QUOTE -->
 <section class="quote">
