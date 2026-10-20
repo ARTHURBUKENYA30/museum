@@ -139,48 +139,57 @@
 </header>
 
 
+<!-- HERO SLIDER -->
+<section class="hero" id="home">
+    <div class="hero-slide active" style="background-image: linear-gradient(90deg, rgba(0,59,32,.88), rgba(0,59,32,.30)), url('images/chandler.jpg');"></div>
 
-<!-- HERO -->
-<section
-    class="hero"
-    id="home"
-    style="background-image:
-        linear-gradient(
-            90deg,
-            rgba(0, 59, 32, 0.88) 0%,
-            rgba(0, 59, 32, 0.68) 45%,
-            rgba(0, 59, 32, 0.30) 100%
-        ),
-        url('images/chandler.jpg');">
+    <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(0,59,32,.88), rgba(0,59,32,.30)), url('images/press.jpg');"></div>
 
-    <div class="container">
+    <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(0,59,32,.88), rgba(0,59,32,.30)), url('images/museum.jpg');"></div>
 
-        <div class="hero-content">
-
-     
-
-            <h1>
-                Where Words
-                <span>Shaped a Nation</span>
-            </h1>
-
-            <p>
-                Discover Uganda's printing and publishing journey —
-                from missionary presses and the Government Printer to
-                modern security printing, publishing, digital archives
-                and the future of public information.
-            </p>
-
-            <div class="buttons">
-
-               
-            </div>
-
-        </div>
-
+    <div class="container hero-content">
+        <h1>Where Words <span>Shaped a Nation</span></h1>
+        <p>Discover Uganda's printing and publishing journey — from historic presses to modern printing and digital archives.</p>
     </div>
 </section>
 
+<style>
+.hero {
+    position: relative;
+    min-height: 500px;
+    background: #003b20;
+    overflow: hidden;
+}
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.hero-slide.active { opacity: 1; }
+.hero .container {
+    position: relative;
+    z-index: 2;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+}
+</style>
+
+<script>
+const slides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}, 5000);
+</script>
+
+    
 <!-- QUOTE -->
 <section class="quote">
 
