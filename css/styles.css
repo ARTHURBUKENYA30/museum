@@ -91,3 +91,33 @@ select {
  .newsletter-form{min-width:0;width:100%;flex-direction:column}
  .footer-logo{width:84px;height:66px}
 }
+
+/* Latest home, collection and footer refinements */
+.home-intro-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,1fr);gap:42px;align-items:center}
+.home-intro-grid .section-title{max-width:720px}
+.home-intro-grid p{line-height:1.8}
+.home-intro-highlight{background:#fff;border-left:6px solid var(--yellow);border-radius:14px;padding:30px;box-shadow:0 12px 34px rgba(0,0,0,.07)}
+.home-intro-highlight h3{font-size:1.45rem;line-height:1.25;margin:14px 0}
+.home-intro-highlight p{color:var(--muted)}
+.collection-filters{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 30px}
+.filter{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,.16);background:#fff;color:#111;border-radius:999px;padding:10px 15px;margin:5px 5px 14px 0;font-weight:800;font-size:.86rem;line-height:1.3;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.filter:hover{border-color:#000;transform:translateY(-1px)}
+.filter.active{background:var(--yellow);border-color:var(--yellow);color:#000}
+.collection-grid .category-feature .card-body{min-height:210px;display:flex;flex-direction:column;align-items:flex-start}
+.collection-grid .category-feature h3{margin:12px 0 8px}
+.collection-grid .category-feature p{color:var(--muted);line-height:1.65}
+.footer-explore-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px;padding:0}
+.footer-explore-links li{margin:0;min-width:0}
+.footer-explore-links a{display:block;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.09);font-size:.88rem;line-height:1.4}
+.footer-explore-links a:hover{padding-left:4px;color:var(--yellow)}
+.footer-explore h4,.footer-sites h4,.footer-contact h4{font-size:.92rem;letter-spacing:.09em;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid var(--yellow);display:inline-block}
+footer .footer-grid{align-items:start}
+footer .footer-sites ul,footer .footer-contact ul{padding:0}
+footer .footer-sites li,footer .footer-contact li{line-height:1.5}
+footer .footer-contact li{margin:12px 0}
+@media(max-width:760px){
+ .home-intro-grid{grid-template-columns:1fr;gap:24px}
+ .home-intro-highlight{padding:24px}
+ .footer-explore-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 12px}
+ .filter{font-size:.8rem;padding:9px 12px}
+}
