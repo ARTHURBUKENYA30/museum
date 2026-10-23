@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- programs.html: standalone museum page. Shared navigation, visual styles and interactions live in common files. -->
+<html lang="en">
+<head>
+  <!-- Set the character encoding and responsive viewport for accessible display. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UPPC Print Heritage Museum — preserving Uganda's printed history since 1902.">
+  <title>UPPC Print Heritage Museum | Programs</title>
+  <!-- One shared stylesheet keeps every page visually consistent. -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Shared top strip and navigation links appear on every page. -->
+  <div class="topbar"><div class="container"><span>Preserving Uganda's Printed History Since 1902</span><span>UPPC Print Heritage Museum · Uganda</span></div></div>
+<header><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html"><span class="logo-frame"><img class="logo" src="images/logo.jpg" alt="UPPC logo"></span><span><strong>UPPC PRINT HERITAGE MUSEUM</strong><small>Ink on Paper, History in Hand.</small></span></a><button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="collections.html">Collections</a></li><li><a href="exhibitions.html">Exhibitions</a></li><li><a href="visit.html">Visit</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="support.html">Support</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+  <main>
+    <!-- Page-specific content begins here. -->
+    <section class="section"><div class="container"><p class="eyebrow">Learning through print</p><h1 class="section-title">Programs</h1><p class="section-intro">Educational and public programs bring the history of printing and publishing to life through objects, stories and practical learning.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px"><article><h2>School learning visits</h2><p>Introduce learners to the history of printing, the printed word and the role of public information.</p></article><article><h2>Printing heritage talks</h2><p>Talks and guided discussions explore historic processes, machines and the people who operated them.</p></article><article><h2>Research and documentation</h2><p>Support research into printing, publishing, institutional history and the preservation of archival material.</p></article></div></div></section>
+  </main>
+  <!-- Shared footer includes partner links and the common JavaScript file. -->
+  <footer class="section paper-bg"><div class="container"><div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px"><div><h3>UPPC Print Heritage Museum</h3><p>Preserving Uganda's Printed History Since 1902</p><p><em>“Ink on Paper, History in Hand.”</em></p></div><div><h3>Explore</h3><p><a href="about.html">About</a> · <a href="collections.html">Collections</a> · <a href="visit.html">Plan your visit</a></p></div><div><h3>Our partners</h3><p><a href="https://www.uppc.go.ug/" target="_blank" rel="noopener">UPPC (www.uppc.go.ug)</a></p><p><a href="https://www.govinfohub.go.ug/" target="_blank" rel="noopener">GovInfoHub (www.govinfohub.go.ug)</a></p><p><a href="https://www.govinfohub/" target="_blank" rel="noopener">UPPCFC (www.govinfohub)</a></p><p><a href="https://www.uppcfc.go.ug/" target="_blank" rel="noopener">UPPC Print School (www.uppcfc.go.ug)</a></p></div></div><div style="margin-top:32px;border-top:1px solid #ccc;padding-top:18px">© <span id="year"></span> UPPC Print Heritage Museum. All rights reserved.</div></div></footer><script src="js/script.js" defer></script>
+</body>
+</html>

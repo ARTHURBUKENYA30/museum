@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- contact.html: standalone museum page. Shared navigation, visual styles and interactions live in common files. -->
+<html lang="en">
+<head>
+  <!-- Set the character encoding and responsive viewport for accessible display. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UPPC Print Heritage Museum — preserving Uganda's printed history since 1902.">
+  <title>UPPC Print Heritage Museum | Contact</title>
+  <!-- One shared stylesheet keeps every page visually consistent. -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Shared top strip and navigation links appear on every page. -->
+  <div class="topbar"><div class="container"><span>Preserving Uganda's Printed History Since 1902</span><span>UPPC Print Heritage Museum · Uganda</span></div></div>
+<header><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html"><span class="logo-frame"><img class="logo" src="images/logo.jpg" alt="UPPC logo"></span><span><strong>UPPC PRINT HERITAGE MUSEUM</strong><small>Ink on Paper, History in Hand.</small></span></a><button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="collections.html">Collections</a></li><li><a href="exhibitions.html">Exhibitions</a></li><li><a href="visit.html">Visit</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="support.html">Support</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+  <main>
+    <!-- Page-specific content begins here. -->
+    <section class="section cream"><div class="container"><p class="eyebrow">Get in touch</p><h1 class="section-title">Contact the Museum</h1><p class="section-intro">For visit arrangements, school groups, collection enquiries or research requests, send the museum team a message.</p><form id="contactForm" style="max-width:700px;display:grid;gap:16px"><label for="name">Your name</label><input id="name" name="name" required><label for="email">Email address</label><input id="email" name="email" type="email" required><label for="subject">Subject</label><select id="subject" name="subject"><option>Visit enquiry</option><option>School or group visit</option><option>Collection and research</option><option>Support and collaboration</option><option>Other</option></select><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea><button class="menu" style="display:block;width:auto;padding:0 22px">Send enquiry</button><p class="muted">This form opens your email application to send the message; it does not submit to a server.</p></form></div></section>
+  </main>
+  <!-- Shared footer includes partner links and the common JavaScript file. -->
+  <footer class="section paper-bg"><div class="container"><div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px"><div><h3>UPPC Print Heritage Museum</h3><p>Preserving Uganda's Printed History Since 1902</p><p><em>“Ink on Paper, History in Hand.”</em></p></div><div><h3>Explore</h3><p><a href="about.html">About</a> · <a href="collections.html">Collections</a> · <a href="visit.html">Plan your visit</a></p></div><div><h3>Our partners</h3><p><a href="https://www.uppc.go.ug/" target="_blank" rel="noopener">UPPC (www.uppc.go.ug)</a></p><p><a href="https://www.govinfohub.go.ug/" target="_blank" rel="noopener">GovInfoHub (www.govinfohub.go.ug)</a></p><p><a href="https://www.govinfohub/" target="_blank" rel="noopener">UPPCFC (www.govinfohub)</a></p><p><a href="https://www.uppcfc.go.ug/" target="_blank" rel="noopener">UPPC Print School (www.uppcfc.go.ug)</a></p></div></div><div style="margin-top:32px;border-top:1px solid #ccc;padding-top:18px">© <span id="year"></span> UPPC Print Heritage Museum. All rights reserved.</div></div></footer><script src="js/script.js" defer></script>
+</body>
+</html>
