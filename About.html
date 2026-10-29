@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the UPPC Print Heritage Museum in Kampala, Uganda: preserving the nation's printing and publishing heritage.">
+  <title>About | UPPC Print Heritage Museum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="utility-bar">
+    <div class="container flex flex-wrap items-center justify-between gap-2">
+      <span>UPPC Print Heritage Museum · Kampala, Uganda</span>
+      <div class="flex flex-wrap gap-4">
+        <a href="mailto:museum@uppc.co.ug">museum@uppc.co.ug</a>
+        <a href="tel:+256414251267">+256 414 251 267</a>
+        <button type="button" data-nav="visit" class="link-gold" style="background:none;border:none;cursor:pointer;font:inherit;color:var(--archive-gold);padding:0;">Plan a visit</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <div class="container flex items-center justify-between py-3.5">
+      <button type="button" data-nav="home" class="flex items-center" style="background:none;border:none;cursor:pointer;padding:0;" aria-label="UPPC Print Museum home">
+        <img class="site-logo" src="/images/logo.jpg" alt="UPPC Print Museum" width="200" height="52" />
+      </button>
+
+      <nav class="desktop-nav flex items-center gap-5">
+        <button type="button" data-nav="home" class="nav-link">Home</button>
+
+        <div class="nav-item">
+          <button type="button" data-nav="about" class="nav-link active">About <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="about">Overview</button>
+            <button type="button" data-nav="history">History &amp; Timeline</button>
+            <button type="button" data-nav="conservation">Conservation</button>
+            <div class="nav-item nav-submenu-item">
+              <button type="button" class="nav-dropdown-parent" aria-haspopup="true">Our Leadership <span aria-hidden="true">›</span></button>
+              <div class="nav-subdropdown">
+                <button type="button" data-nav="leadership-board">Board of Directors</button>
+                <button type="button" data-nav="leadership-management">Management</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="collections" class="nav-link">Collections <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="collections">All Collections</button>
+            <button type="button" data-nav="col-presses">Printing Presses</button>
+            <button type="button" data-nav="col-type">Type &amp; Composition</button>
+            <button type="button" data-nav="col-gazettes">Official Publications</button>
+            <button type="button" data-nav="col-newspapers">Newspapers</button>
+            <button type="button" data-nav="col-books">Books &amp; Textbooks</button>
+            <button type="button" data-nav="col-offset">Offset &amp; Lithography</button>
+            <button type="button" data-nav="col-ink">Ink &amp; Colour</button>
+            <button type="button" data-nav="research">Research Access</button>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="exhibitions" class="nav-link">Exhibitions <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="exhibitions">Current</button>
+            <button type="button" data-nav="exhibitions">Upcoming &amp; Past</button>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="visit" class="nav-link">Visit <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="visit">Hours &amp; Location</button>
+            <button type="button" data-nav="visit-groups">Group Visits</button>
+            <button type="button" data-nav="visit-access">Accessibility</button>
+            <button type="button" data-nav="virtual-tour">Virtual Tour</button>
+          </div>
+        </div>
+
+        <button type="button" data-nav="education" class="nav-link">Programs</button>
+        <button type="button" data-nav="news" class="nav-link">News</button>
+        <button type="button" data-nav="support" class="nav-link">Support</button>
+        <button type="button" data-nav="contact" class="nav-link">Contact</button>
+      </nav>
+
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile-panel" id="mobile-panel">
+      <button type="button" class="mobile-link" data-nav="home">Home</button>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="about">About <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="about">Overview</button>
+          <button type="button" data-nav="history">History &amp; Timeline</button>
+          <button type="button" data-nav="conservation">Conservation</button>
+          <div class="mobile-subgroup">
+            <button type="button" class="mobile-subgroup-btn" aria-expanded="false">Our Leadership <span class="arrow">▾</span></button>
+            <div class="mobile-subgroup-links">
+              <button type="button" data-nav="leadership-board">Board of Directors</button>
+              <button type="button" data-nav="leadership-management">Management</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="collections">Collections <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="collections">All Collections</button>
+          <button type="button" data-nav="col-presses">Printing Presses</button>
+          <button type="button" data-nav="col-type">Type &amp; Composition</button>
+          <button type="button" data-nav="col-gazettes">Official Publications</button>
+          <button type="button" data-nav="col-newspapers">Newspapers</button>
+          <button type="button" data-nav="col-books">Books &amp; Textbooks</button>
+          <button type="button" data-nav="col-binding">Bookbinding</button>
+          <button type="button" data-nav="col-offset">Offset &amp; Lithography</button>
+          <button type="button" data-nav="col-ink">Ink &amp; Colour</button>
+          <button type="button" data-nav="research">Research Access</button>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="exhibitions">Exhibitions <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="exhibitions">Current</button>
+          <button type="button" data-nav="exhibitions">Upcoming &amp; Past</button>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="visit">Visit <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="visit">Hours &amp; Location</button>
+          <button type="button" data-nav="visit-groups">Group Visits</button>
+          <button type="button" data-nav="visit-access">Accessibility</button>
+          <button type="button" data-nav="virtual-tour">Virtual Tour</button>
+        </div>
+      </div>
+
+      <button type="button" class="mobile-link" data-nav="education">Programs</button>
+      <button type="button" class="mobile-link" data-nav="news">News</button>
+      <button type="button" class="mobile-link" data-nav="support">Support</button>
+      <button type="button" class="mobile-link" data-nav="contact">Contact</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" style="--page-banner-image: url('/images/reference-4992bd7f42e4036f.jpg')" aria-label="OVERVIEW page banner">
+      <div class="page-banner-inner"><h1>OVERVIEW</h1></div>
+    </section>
+    <div class="uganda-colour-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+
+
+    <div class="view active" id="about" data-view="about">
+      <section class="section">
+        <div class="container">
+          
+          <p class="eyebrow">About the Museum</p>
+          
+          <p class="body-text mb-4">The UPPC Print Heritage Museum is Uganda’s dedicated centre for the history of printing and publishing. It operates under the Uganda Printing and Publishing Corporation and serves researchers, students, craft practitioners and the general public.</p>
+          <p class="body-text mb-4">Our galleries and research rooms interpret more than a century of print production — from early government notices and missionary tracts to modern newspaper and textbook manufacturing. Visitors encounter working knowledge, historic machinery and the documents that shaped civic life.</p>
+          <p class="body-text mb-4">The museum combines conservation, exhibition and education. We preserve objects and records; we present them through programmes and displays; and we open selected holdings to scholars by appointment.</p>
+          <p class="body-text mb-6">Located at the UPPC campus on Entebbe Road, Kampala, the museum is both a public destination and a working archive. Whether you are planning a first visit, arranging a school programme, or preparing a research request, this overview introduces the institution’s purpose, values and how to engage with our work.</p>
+
+          <div class="motto-banner">
+            <div class="label">Motto</div>
+            <div class="text">“What is printed endures; what is preserved instructs.”</div>
+          </div>
+
+          <div class="identity-section">
+            <h2 class="section-heading">Vision, Mission &amp; Core Values</h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+              <div class="block-vision">
+                <span class="block-label">Our vision</span>
+                <h3>Vision</h3>
+                <p class="text-base leading-relaxed">A premier national heritage center showcasing Uganda’s rich printing and publishing history, inspiring learning, innovation, and cultural pride, and contributing to Uganda’s tourism growth.</p>
+              </div>
+              <div class="block-mission">
+                <span class="block-label">Our mission</span>
+                <h3>Mission</h3>
+                <p class="text-base leading-relaxed">To preserve, document, and exhibit the history and evolution of printing and publishing in Uganda, providing an engaging cultural and educational experience that attracts local and international visitors, supports heritage tourism, and promotes national identity.</p>
+              </div>
+            </div>
+            <h3 class="section-heading" style="font-size:1.15rem;margin-bottom:1rem;">Core values</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-4">
+              <div class="block-value stewardship"><span class="block-label">Value</span><h3>Stewardship</h3><p>Careful custody of objects, documents and stories for future generations.</p></div>
+              <div class="block-value integrity"><span class="block-label">Value</span><h3>Integrity</h3><p>Accurate, evidence-based interpretation of Uganda’s print history.</p></div>
+              <div class="block-value access"><span class="block-label">Value</span><h3>Access</h3><p>Open pathways for research, education and public engagement.</p></div>
+              <div class="block-value craft"><span class="block-label">Value</span><h3>Craft</h3><p>Respect for the skills, tools and labour behind every printed page.</p></div>
+            </div>
+          </div>
+
+          <h2 class="section-heading mb-3">Who we serve</h2>
+          <p class="body-text mb-4">The museum welcomes a wide range of audiences. School groups explore how print supported governance and learning. University students and independent researchers consult gazettes, newspapers and selected archival materials by appointment. Design and heritage professionals study type, machinery and production methods. Members of the public visit exhibitions that connect everyday documents to national history.</p>
+          <p class="body-text mb-8">We work in partnership with UPPC staff, cultural institutions and educators to keep print heritage visible, accurate and useful — not only as nostalgia, but as a living record of how Uganda communicated with itself.</p>
+
+          <div class="flex flex-wrap gap-4">
+            <button type="button" data-nav="history" class="btn-outline">History &amp; Timeline</button>
+            <button type="button" data-nav="conservation" class="btn-outline">Conservation</button>
+            <button type="button" data-nav="leadership" class="btn-outline">Leadership</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="history" data-view="history">
+      <section class="section bg-paper">
+        <div class="container prose-balanced">
+          <p class="breadcrumb"><button type="button" data-nav="home">Home</button> / <button type="button" data-nav="about">About</button> / History</p>
+         
+          <h1 class="page-title">History &amp; Timeline</h1>
+          <p class="body-text mb-8">The story of formal government printing in Uganda spans more than a century. From early organised capacity to today’s digital workflows, print has underpinned law, education and public information. The timeline below highlights institutional milestones that the museum interprets through objects, documents and oral history.</p>
+          <div class="max-w-3xl">
+            <div class="timeline-item"><div class="timeline-year">1920s–1950s</div><div><strong>Colonial Era Foundations</strong><p class="mt-1 text-base opacity-90">Establishment of the Government Printer in Entebbe under the British Protectorate. Its mandate was to produce the Uganda Gazette, laws, ordinances, and official notices.</p></div></div>
+            <div class="timeline-item"><div class="timeline-year">1962s-1967</div><div><strong>Independence & Transition</strong><p class="mt-1 text-base opacity-90">Uganda attained independence; the Government Printer continued as the official state printer, producing parliamentary acts, gazettes, and government communications.</p></div></div>
+            <div class="timeline-item"><div class="timeline-year">1970s–1992</div><div><strong>Institutional Transformation</strong><p class="mt-1 text-base opacity-90">Despite political upheaval under Idi Amin, the Government Printer remained the sole authority for official publications, including decrees and propaganda.</p></div></div>
+            <div class="timeline-item"><div class="timeline-year">1990s–2000s </div><div><strong>Modernization & Challenges</strong><p class="mt-1 text-base opacity-90">UPPC began modernization efforts, including digital workflows, but struggled with funding and equipment upgrades.</p></div></div>
+            <div class="timeline-item" style="border-left-color:transparent;"><div class="timeline-year">Today</div><div><strong>Print Heritage Museum</strong><p class="mt-1 text-base opacity-90">A dedicated museum and research space opens the story of national print culture to the public, scholars and the next generation of craft and design practitioners.</p></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="mission" data-view="mission">
+      <section class="section">
+        <div class="container">
+          <p class="breadcrumb"><button type="button" data-nav="home">Home</button> / <button type="button" data-nav="about">About</button> / Mission, Vision &amp; Values</p>
+          <p class="eyebrow">Institutional identity</p>
+          <h1 class="page-title">Vision, Mission &amp; Core Values</h1>
+          <p class="body-text mb-8">These statements guide every aspect of the museum’s work — from collections care and exhibitions to education, research access and public engagement.</p>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <div class="block-vision">
+              <span class="block-label">Our vision</span>
+              <h3>Vision</h3>
+              <p class="text-base leading-relaxed">To be the leading centre for the preservation, study and public understanding of Uganda’s printing and publishing heritage — recognised nationally and respected internationally.</p>
+            </div>
+            <div class="block-mission">
+              <span class="block-label">Our mission</span>
+              <h3>Mission</h3>
+              <p class="text-base leading-relaxed">To collect, conserve and interpret the material culture of print — making the story of national communication accessible to researchers, students and the public.</p>
+            </div>
+          </div>
+
+          <h2 class="section-heading mb-4">Core values</h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+            <div class="block-value stewardship"><span class="block-label">Value</span><h3>Stewardship</h3><p>Careful custody of objects, documents and stories for future generations.</p></div>
+            <div class="block-value integrity"><span class="block-label">Value</span><h3>Integrity</h3><p>Accurate, evidence-based interpretation of Uganda’s print history.</p></div>
+            <div class="block-value access"><span class="block-label">Value</span><h3>Access</h3><p>Open pathways for research, education and public engagement.</p></div>
+            <div class="block-value craft"><span class="block-label">Value</span><h3>Craft</h3><p>Respect for the skills, tools and labour behind every printed page.</p></div>
+          </div>
+
+          <h2 class="section-heading mb-4">How we deliver the mission</h2>
+          <p class="body-text mb-6">Our day-to-day work rests on three commitments: to preserve the material evidence of print; to interpret its meaning for diverse audiences; and to engage the public, scholars and practitioners in ongoing discovery.</p>
+          <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="block-preserve"><h3>Preserve</h3><p class="text-base leading-relaxed">Conserve machinery, type, publications and oral histories that document Uganda’s print heritage, ensuring long-term care and responsible documentation.</p></div>
+            <div class="block-interpret"><h3>Interpret</h3><p class="text-base leading-relaxed">Present the social, political and technological story of printing through exhibitions, publications and programmes grounded in evidence.</p></div>
+            <div class="block-engage"><h3>Engage</h3><p class="text-base leading-relaxed">Serve researchers, students, craft practitioners and the public with access, education and collaborative opportunities.</p></div>
+          </div>
+
+          <h2 class="section-heading mb-3">How we work</h2>
+          <p class="body-text mb-4">Collections care, research access and public programming are planned together. Objects are not only displayed; they are contextualised with documents and first-hand accounts. Education programmes draw on the same holdings used by researchers, so learning and scholarship reinforce each other.</p>
+          <p class="body-text mb-8">We measure success by the quality of conservation, the clarity of interpretation, and the breadth of people who can meaningfully use the museum — from a school class on a first visit to a scholar completing a long-term project.</p>
+
+          <div class="flex flex-wrap gap-3">
+            <button type="button" data-nav="about" class="btn-outline">Back to Overview</button>
+            <button type="button" data-nav="leadership" class="btn-primary">Leadership</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="conservation" data-view="conservation">
+      <section class="section">
+        <div class="container prose-balanced">
+      
+          <p class="body-text mb-6">The museum is responsible for the long-term care of machinery, type, publications, photographs and oral history materials. Conservation work protects these holdings so they remain available for exhibition, education and research.</p>
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <div class="card"><h3>Preventive care</h3><p class="text-base opacity-90 leading-relaxed">Stable storage, controlled handling and environmental monitoring reduce risk to paper, metal and photographic materials before damage occurs.</p></div>
+            <div class="card"><h3>Treatment &amp; stabilisation</h3><p class="text-base opacity-90 leading-relaxed">When objects require intervention, treatments aim to stabilise condition for safe display or research use, documented for future reference.</p></div>
+            <div class="card"><h3>Machinery &amp; tools</h3><p class="text-base opacity-90 leading-relaxed">Historic presses and workshop tools are cleaned, secured and interpreted as industrial heritage, with safety and authenticity both considered.</p></div>
+            <div class="card"><h3>Documentation</h3><p class="text-base opacity-90 leading-relaxed">Condition notes, photography and catalogue records support decisions about display, loans and research access over time.</p></div>
+          </div>
+          <h2 class="section-heading mb-3">Working with fragile print</h2>
+          <p class="body-text mb-4">Newsprint, ephemera and heavily used gazettes are especially vulnerable. Access may be supervised or limited so that material survives for future readers. Researchers are asked to follow handling guidance provided by staff.</p>
+          <p class="body-text mb-8">Conservation priorities are reviewed alongside exhibition and education plans, so public programmes do not put collections at unnecessary risk.</p>
+          <div class="flex flex-wrap gap-3">
+            <button type="button" data-nav="about" class="btn-outline">Back to Overview</button>
+            <button type="button" data-nav="research" class="btn-primary">Research access</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="leadership" data-view="leadership">
+      <section class="section bg-paper">
+        <div class="container prose-balanced">
+       
+          <p class="body-text mb-4">The museum operates under the institutional authority of the Uganda Printing and Publishing Corporation. Strategic direction, collections policy and public programming are aligned with UPPC’s mandate to serve the nation’s printing and publishing needs while safeguarding historic capacity and knowledge.</p>
+          <p class="body-text mb-8">Day-to-day leadership is organised across three areas: overall museum direction, curatorial care and research access, and learning and outreach. Together they ensure that conservation, exhibition and education remain coordinated.</p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card"><p class="text-sm text-heritage font-bold uppercase tracking-wide mb-1">Museum Director</p><p class="font-bold text-lg mb-1">Appointed by UPPC</p><p class="text-sm opacity-80">Overall direction, collections strategy, partnerships and public programmes.</p></div>
+            <div class="card"><p class="text-sm text-heritage font-bold uppercase tracking-wide mb-1">Curatorial Team</p><p class="font-bold text-lg mb-1">Collections &amp; Research</p><p class="text-sm opacity-80">Care of holdings, exhibition development, cataloguing and scholarly access.</p></div>
+            <div class="card"><p class="text-sm text-heritage font-bold uppercase tracking-wide mb-1">Programs</p><p class="font-bold text-lg mb-1">Learning &amp; Outreach</p><p class="text-sm opacity-80">School programmes, workshops, public talks and community engagement.</p></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <div class="uganda-colour-rule footer-colour-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div class="footer-col">
+          <img class="site-logo-footer" src="/images/logo.jpg" alt="UPPC Print Museum" width="220" height="72" />
+          <p class="text-sm opacity-80 leading-relaxed">The national archive of Uganda’s printing and publishing heritage.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <button type="button" data-nav="about" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">About</button>
+          <button type="button" data-nav="collections" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Collections</button>
+          <button type="button" data-nav="exhibitions" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Exhibitions</button>
+          <button type="button" data-nav="education" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Programs</button>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <button type="button" data-nav="visit" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Hours &amp; Location</button>
+          <button type="button" data-nav="research" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Research Access</button>
+          <button type="button" data-nav="support" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Support</button>
+          <button type="button" data-nav="news" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">News</button>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:museum@uppc.co.ug">museum@uppc.co.ug</a>
+          <p>+256 414 251 267</p>
+          <p class="mt-2">UPPC Headquarters<br>Entebbe Road, Kampala</p>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-white/20 text-sm opacity-70 flex flex-col sm:flex-row sm:justify-between gap-2">
+        <span>© <span data-year></span> Uganda Printing and Publishing Corporation. All rights reserved.</span>
+        <span>Print Heritage Museum</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

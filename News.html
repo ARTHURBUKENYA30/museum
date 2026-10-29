@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the UPPC Print Heritage Museum in Kampala, Uganda: preserving the nation's printing and publishing heritage.">
+  <title>News | UPPC Print Heritage Museum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="utility-bar">
+    <div class="container flex flex-wrap items-center justify-between gap-2">
+      <span>UPPC Print Heritage Museum · Kampala, Uganda</span>
+      <div class="flex flex-wrap gap-4">
+        <a href="mailto:museum@uppc.co.ug">museum@uppc.co.ug</a>
+        <a href="tel:+256414251267">+256 414 251 267</a>
+        <button type="button" data-nav="visit" class="link-gold" style="background:none;border:none;cursor:pointer;font:inherit;color:var(--archive-gold);padding:0;">Plan a visit</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <div class="container flex items-center justify-between py-3.5">
+      <button type="button" data-nav="home" class="flex items-center" style="background:none;border:none;cursor:pointer;padding:0;" aria-label="UPPC Print Museum home">
+        <img class="site-logo" src="/images/logo.jpg" alt="UPPC Print Museum" width="200" height="52" />
+      </button>
+
+      <nav class="desktop-nav flex items-center gap-5">
+        <button type="button" data-nav="home" class="nav-link">Home</button>
+
+        <div class="nav-item">
+          <button type="button" data-nav="about" class="nav-link">About <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="about">Overview</button>
+            <button type="button" data-nav="history">History &amp; Timeline</button>
+            <button type="button" data-nav="conservation">Conservation</button>
+            <div class="nav-item nav-submenu-item">
+              <button type="button" class="nav-dropdown-parent" aria-haspopup="true">Our Leadership <span aria-hidden="true">›</span></button>
+              <div class="nav-subdropdown">
+                <button type="button" data-nav="leadership-board">Board of Directors</button>
+                <button type="button" data-nav="leadership-management">Management</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="collections" class="nav-link">Collections <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="collections">All Collections</button>
+            <button type="button" data-nav="col-presses">Printing Presses</button>
+            <button type="button" data-nav="col-type">Type &amp; Composition</button>
+            <button type="button" data-nav="col-gazettes">Official Publications</button>
+            <button type="button" data-nav="col-newspapers">Newspapers</button>
+            <button type="button" data-nav="col-books">Books &amp; Textbooks</button>
+            <button type="button" data-nav="col-offset">Offset &amp; Lithography</button>
+            <button type="button" data-nav="col-ink">Ink &amp; Colour</button>
+            <button type="button" data-nav="research">Research Access</button>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="exhibitions" class="nav-link">Exhibitions <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="exhibitions">Current</button>
+            <button type="button" data-nav="exhibitions">Upcoming &amp; Past</button>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="visit" class="nav-link">Visit <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="visit">Hours &amp; Location</button>
+            <button type="button" data-nav="visit-groups">Group Visits</button>
+            <button type="button" data-nav="visit-access">Accessibility</button>
+            <button type="button" data-nav="virtual-tour">Virtual Tour</button>
+          </div>
+        </div>
+
+        <button type="button" data-nav="education" class="nav-link">Programs</button>
+        <button type="button" data-nav="news" class="nav-link active">News</button>
+        <button type="button" data-nav="support" class="nav-link">Support</button>
+        <button type="button" data-nav="contact" class="nav-link">Contact</button>
+      </nav>
+
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile-panel" id="mobile-panel">
+      <button type="button" class="mobile-link" data-nav="home">Home</button>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="about">About <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="about">Overview</button>
+          <button type="button" data-nav="history">History &amp; Timeline</button>
+          <button type="button" data-nav="conservation">Conservation</button>
+          <div class="mobile-subgroup">
+            <button type="button" class="mobile-subgroup-btn" aria-expanded="false">Our Leadership <span class="arrow">▾</span></button>
+            <div class="mobile-subgroup-links">
+              <button type="button" data-nav="leadership-board">Board of Directors</button>
+              <button type="button" data-nav="leadership-management">Management</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="collections">Collections <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="collections">All Collections</button>
+          <button type="button" data-nav="col-presses">Printing Presses</button>
+          <button type="button" data-nav="col-type">Type &amp; Composition</button>
+          <button type="button" data-nav="col-gazettes">Official Publications</button>
+          <button type="button" data-nav="col-newspapers">Newspapers</button>
+          <button type="button" data-nav="col-books">Books &amp; Textbooks</button>
+          <button type="button" data-nav="col-binding">Bookbinding</button>
+          <button type="button" data-nav="col-offset">Offset &amp; Lithography</button>
+          <button type="button" data-nav="col-ink">Ink &amp; Colour</button>
+          <button type="button" data-nav="research">Research Access</button>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="exhibitions">Exhibitions <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="exhibitions">Current</button>
+          <button type="button" data-nav="exhibitions">Upcoming &amp; Past</button>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="visit">Visit <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="visit">Hours &amp; Location</button>
+          <button type="button" data-nav="visit-groups">Group Visits</button>
+          <button type="button" data-nav="visit-access">Accessibility</button>
+          <button type="button" data-nav="virtual-tour">Virtual Tour</button>
+        </div>
+      </div>
+
+      <button type="button" class="mobile-link" data-nav="education">Programs</button>
+      <button type="button" class="mobile-link" data-nav="news">News</button>
+      <button type="button" class="mobile-link" data-nav="support">Support</button>
+      <button type="button" class="mobile-link" data-nav="contact">Contact</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" style="--page-banner-image: url('/images/reference-1032a762b066eb36.jpg')" aria-label="NEWS & ANNOUNCEMENTS page banner">
+      <div class="page-banner-inner"><h1>NEWS & ANNOUNCEMENTS</h1></div>
+    </section>
+    <div class="uganda-colour-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+
+
+    <div class="view active" id="news" data-view="news">
+      <section class="section">
+        <div class="container">
+   
+          <p class="body-text mb-6">Stories about exhibitions, research access, collections and public programmes. Open any article to read the full piece.</p>
+
+          <div class="card mb-10" style="max-width:36rem;">
+            <h2 class="section-heading" style="font-size:1.2rem;margin-bottom:0.5rem;">Stay Updated</h2>
+            <p class="text-base opacity-90 mb-4">Receive notices about exhibitions, research openings and public programmes.</p>
+            <form id="subscribe-form-home" class="flex flex-col sm:flex-row gap-3" novalidate>
+              <label for="email-home" class="sr-only">Email</label>
+              <input type="email" id="email-home" required placeholder="Your email address" class="input-museum flex-1" autocomplete="email" />
+              <button type="submit" class="btn-primary whitespace-nowrap">Subscribe</button>
+            </form>
+            <div id="form-message-home" class="form-message" role="status" aria-live="polite"></div>
+          </div>
+
+          <article class="news-card">
+            <img src="/images/reference-ab4b46f78c454ab9.jpg" alt="Exhibition and documents" loading="lazy" />
+            <div class="body">
+              <p class="text-sm text-heritage font-bold mb-1">12 October 2026</p>
+              <h3 class="text-xl mb-2">Curator’s Talk: Ink &amp; Independence</h3>
+              <p class="text-base opacity-90 mb-3">A guided discussion of the current exhibition on print culture at the birth of the nation. Free entry; registration preferred.</p>
+              <button type="button" data-nav="news-1" class="link-heritage">Read full article →</button>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="/images/reference-1032a762b066eb36.jpg" alt="Archive research shelves" loading="lazy" />
+            <div class="body">
+              <p class="text-sm text-heritage font-bold mb-1">28 September 2026</p>
+              <h3 class="text-xl mb-2">Research appointments open for Q4</h3>
+              <p class="text-base opacity-90 mb-3">Scholars and students may request collection access for October–December. Include your research outline when you write.</p>
+              <button type="button" data-nav="news-2" class="link-heritage">Read full article →</button>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="/images/reference-e4e098e0bdefa313.jpg" alt="Oral history recording" loading="lazy" />
+            <div class="body">
+              <p class="text-sm text-heritage font-bold mb-1">5 August 2026</p>
+              <h3 class="text-xl mb-2">New oral history recordings accessioned</h3>
+              <p class="text-base opacity-90 mb-3">Three interviews with former UPPC press operators join the oral history collection for supervised research use.</p>
+              <button type="button" data-nav="news-3" class="link-heritage">Read full article →</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="news-1" data-view="news-1">
+      <section class="section">
+        <div class="container" style="max-width:46rem;">
+          <p class="breadcrumb"><button type="button" data-nav="home">Home</button> / <button type="button" data-nav="news">News</button> / Curator’s Talk</p>
+          <p class="text-sm text-heritage font-bold mb-2">12 October 2026 · Events</p>
+          <h1 class="page-title">Curator’s Talk: Ink &amp; Independence</h1>
+          <img class="news-article-hero" src="/images/reference-ab4b46f78c454ab9.jpg" alt="Documents related to the exhibition" loading="lazy" />
+          <div class="news-article-body">
+            <p>The museum invites the public to a curator-led talk on <strong>Ink &amp; Independence</strong>, the current exhibition exploring how gazettes, newspapers and public notices recorded Uganda’s transition to independence and the early years of the Republic.</p>
+            <p>The session will walk through selected objects on display in Gallery One, including official publications and press-related material that show how print supported political change and everyday administration.</p>
+            <p><strong>Date:</strong> Saturday 8 November 2026<br><strong>Time:</strong> 11:00<br><strong>Place:</strong> Gallery One, UPPC Print Heritage Museum<br><strong>Admission:</strong> Free; registration preferred</p>
+            <p>To register, email <a href="mailto:museum@uppc.co.ug?subject=Curator%20Talk%20Registration" class="link-heritage">museum@uppc.co.ug</a> or use the contact form. School groups should book through the Programs team.</p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <button type="button" data-nav="news" class="btn-outline">Back to News</button>
+            <button type="button" data-nav="exhibitions" class="btn-primary">View exhibition</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="news-2" data-view="news-2">
+      <section class="section">
+        <div class="container" style="max-width:46rem;">
+          <p class="breadcrumb"><button type="button" data-nav="home">Home</button> / <button type="button" data-nav="news">News</button> / Research access</p>
+          <p class="text-sm text-heritage font-bold mb-2">28 September 2026 · Research</p>
+          <h1 class="page-title">Research appointments open for Q4</h1>
+          <img class="news-article-hero" src="/images/reference-1032a762b066eb36.jpg" alt="Archive shelves for research" loading="lazy" />
+          <div class="news-article-body">
+            <p>The curatorial team is accepting research access requests for <strong>October–December 2026</strong>. Scholars, postgraduate students and independent researchers may request supervised consultation of designated gazettes, newspapers, photographic materials and other holdings approved for research use.</p>
+            <p>When you write, please include: a short description of your research topic; the types of material you hope to consult; preferred dates; and your institutional affiliation if any. This helps staff prepare relevant materials and advise on access conditions.</p>
+            <p>Handling rules protect fragile items for future users. Photography and reproduction requests are considered case by case according to institutional policy and the condition of the material.</p>
+            <p>Email <a href="mailto:museum@uppc.co.ug?subject=Research%20Access%20Request" class="link-heritage">museum@uppc.co.ug</a> with the subject line “Research Access Request”.</p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <button type="button" data-nav="news" class="btn-outline">Back to News</button>
+            <button type="button" data-nav="research" class="btn-primary">Research access details</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="news-3" data-view="news-3">
+      <section class="section">
+        <div class="container" style="max-width:46rem;">
+          <p class="breadcrumb"><button type="button" data-nav="home">Home</button> / <button type="button" data-nav="news">News</button> / Oral histories</p>
+          <p class="text-sm text-heritage font-bold mb-2">5 August 2026 · Collections</p>
+          <h1 class="page-title">New oral history recordings accessioned</h1>
+          <img class="news-article-hero" src="/images/reference-e4e098e0bdefa313.jpg" alt="Recording equipment for oral history" loading="lazy" />
+          <div class="news-article-body">
+            <p>Three new interviews with former UPPC press operators have been accessioned into the <strong>Oral Histories &amp; Trade Knowledge</strong> collection. The recordings document press-room routines, training pathways and the transition from letterpress practices toward newer production methods.</p>
+            <p>Oral history complements machinery and printed documents by capturing skills and workplace memory that objects alone cannot fully explain. The new material will support exhibition interpretation and supervised research use.</p>
+            <p>Researchers interested in consulting these recordings should follow the standard research access process and note “oral history” in their request.</p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <button type="button" data-nav="news" class="btn-outline">Back to News</button>
+            <button type="button" data-nav="col-oral" class="btn-primary">Oral Histories collection</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <div class="uganda-colour-rule footer-colour-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div class="footer-col">
+          <img class="site-logo-footer" src="/images/logo.jpg" alt="UPPC Print Museum" width="220" height="72" />
+          <p class="text-sm opacity-80 leading-relaxed">The national archive of Uganda’s printing and publishing heritage.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <button type="button" data-nav="about" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">About</button>
+          <button type="button" data-nav="collections" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Collections</button>
+          <button type="button" data-nav="exhibitions" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Exhibitions</button>
+          <button type="button" data-nav="education" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Programs</button>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <button type="button" data-nav="visit" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Hours &amp; Location</button>
+          <button type="button" data-nav="research" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Research Access</button>
+          <button type="button" data-nav="support" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Support</button>
+          <button type="button" data-nav="news" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">News</button>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:museum@uppc.co.ug">museum@uppc.co.ug</a>
+          <p>+256 414 251 267</p>
+          <p class="mt-2">UPPC Headquarters<br>Entebbe Road, Kampala</p>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-white/20 text-sm opacity-70 flex flex-col sm:flex-row sm:justify-between gap-2">
+        <span>© <span data-year></span> Uganda Printing and Publishing Corporation. All rights reserved.</span>
+        <span>Print Heritage Museum</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

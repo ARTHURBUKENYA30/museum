@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the UPPC Print Heritage Museum in Kampala, Uganda: preserving the nation's printing and publishing heritage.">
+  <title>Visit | UPPC Print Heritage Museum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="utility-bar">
+    <div class="container flex flex-wrap items-center justify-between gap-2">
+      <span>UPPC Print Heritage Museum · Kampala, Uganda</span>
+      <div class="flex flex-wrap gap-4">
+        <a href="mailto:museum@uppc.co.ug">museum@uppc.co.ug</a>
+        <a href="tel:+256414251267">+256 414 251 267</a>
+        <button type="button" data-nav="visit" class="link-gold" style="background:none;border:none;cursor:pointer;font:inherit;color:var(--archive-gold);padding:0;">Plan a visit</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <div class="container flex items-center justify-between py-3.5">
+      <button type="button" data-nav="home" class="flex items-center" style="background:none;border:none;cursor:pointer;padding:0;" aria-label="UPPC Print Museum home">
+        <img class="site-logo" src="/images/logo.jpg" alt="UPPC Print Museum" width="200" height="52" />
+      </button>
+
+      <nav class="desktop-nav flex items-center gap-5">
+        <button type="button" data-nav="home" class="nav-link">Home</button>
+
+        <div class="nav-item">
+          <button type="button" data-nav="about" class="nav-link">About <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="about">Overview</button>
+            <button type="button" data-nav="history">History &amp; Timeline</button>
+            <button type="button" data-nav="conservation">Conservation</button>
+            <div class="nav-item nav-submenu-item">
+              <button type="button" class="nav-dropdown-parent" aria-haspopup="true">Our Leadership <span aria-hidden="true">›</span></button>
+              <div class="nav-subdropdown">
+                <button type="button" data-nav="leadership-board">Board of Directors</button>
+                <button type="button" data-nav="leadership-management">Management</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="collections" class="nav-link">Collections <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="collections">All Collections</button>
+            <button type="button" data-nav="col-presses">Printing Presses</button>
+            <button type="button" data-nav="col-type">Type &amp; Composition</button>
+            <button type="button" data-nav="col-gazettes">Official Publications</button>
+            <button type="button" data-nav="col-newspapers">Newspapers</button>
+            <button type="button" data-nav="col-books">Books &amp; Textbooks</button>
+            <button type="button" data-nav="col-offset">Offset &amp; Lithography</button>
+            <button type="button" data-nav="col-ink">Ink &amp; Colour</button>
+            <button type="button" data-nav="research">Research Access</button>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="exhibitions" class="nav-link">Exhibitions <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="exhibitions">Current</button>
+            <button type="button" data-nav="exhibitions">Upcoming &amp; Past</button>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button type="button" data-nav="visit" class="nav-link active">Visit <span aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown">
+            <button type="button" data-nav="visit">Hours &amp; Location</button>
+            <button type="button" data-nav="visit-groups">Group Visits</button>
+            <button type="button" data-nav="visit-access">Accessibility</button>
+            <button type="button" data-nav="virtual-tour">Virtual Tour</button>
+          </div>
+        </div>
+
+        <button type="button" data-nav="education" class="nav-link">Programs</button>
+        <button type="button" data-nav="news" class="nav-link">News</button>
+        <button type="button" data-nav="support" class="nav-link">Support</button>
+        <button type="button" data-nav="contact" class="nav-link">Contact</button>
+      </nav>
+
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile-panel" id="mobile-panel">
+      <button type="button" class="mobile-link" data-nav="home">Home</button>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="about">About <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="about">Overview</button>
+          <button type="button" data-nav="history">History &amp; Timeline</button>
+          <button type="button" data-nav="conservation">Conservation</button>
+          <div class="mobile-subgroup">
+            <button type="button" class="mobile-subgroup-btn" aria-expanded="false">Our Leadership <span class="arrow">▾</span></button>
+            <div class="mobile-subgroup-links">
+              <button type="button" data-nav="leadership-board">Board of Directors</button>
+              <button type="button" data-nav="leadership-management">Management</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="collections">Collections <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="collections">All Collections</button>
+          <button type="button" data-nav="col-presses">Printing Presses</button>
+          <button type="button" data-nav="col-type">Type &amp; Composition</button>
+          <button type="button" data-nav="col-gazettes">Official Publications</button>
+          <button type="button" data-nav="col-newspapers">Newspapers</button>
+          <button type="button" data-nav="col-books">Books &amp; Textbooks</button>
+          <button type="button" data-nav="col-binding">Bookbinding</button>
+          <button type="button" data-nav="col-offset">Offset &amp; Lithography</button>
+          <button type="button" data-nav="col-ink">Ink &amp; Colour</button>
+          <button type="button" data-nav="research">Research Access</button>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="exhibitions">Exhibitions <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="exhibitions">Current</button>
+          <button type="button" data-nav="exhibitions">Upcoming &amp; Past</button>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" data-group="visit">Visit <span class="arrow">▾</span></button>
+        <div class="mobile-sub">
+          <button type="button" data-nav="visit">Hours &amp; Location</button>
+          <button type="button" data-nav="visit-groups">Group Visits</button>
+          <button type="button" data-nav="visit-access">Accessibility</button>
+          <button type="button" data-nav="virtual-tour">Virtual Tour</button>
+        </div>
+      </div>
+
+      <button type="button" class="mobile-link" data-nav="education">Programs</button>
+      <button type="button" class="mobile-link" data-nav="news">News</button>
+      <button type="button" class="mobile-link" data-nav="support">Support</button>
+      <button type="button" class="mobile-link" data-nav="contact">Contact</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" style="--page-banner-image: url('/images/reference-4992bd7f42e4036f.jpg')" aria-label="HOURS & LOCATION page banner">
+      <div class="page-banner-inner"><h1>HOURS & LOCATION</h1></div>
+    </section>
+    <div class="uganda-colour-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+
+
+    <div class="view active" id="visit" data-view="visit">
+      <section class="section">
+        <div class="container prose-balanced">
+     
+          <p class="body-text mb-6">The UPPC Print Heritage Museum is located within the UPPC campus on Entebbe Road, Kampala. Use this page for opening times, how to find us, admission and what to expect on a general visit.</p>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
+            <div class="card"><h3 class="font-bold text-sm uppercase tracking-wide text-heritage mb-2">Location</h3><p class="text-base">UPPC Headquarters<br>Entebbe Road, Kampala<br>Uganda</p></div>
+            <div class="card"><h3 class="font-bold text-sm uppercase tracking-wide text-heritage mb-2">Hours</h3><p class="text-base">Monday – Friday<br>09:00 – 16:00<br>Closed public holidays</p></div>
+            <div class="card"><h3 class="font-bold text-sm uppercase tracking-wide text-heritage mb-2">Admission</h3><p class="text-base">Free entry for general gallery visits<br>Research visits by appointment</p></div>
+            <div class="card"><h3 class="font-bold text-sm uppercase tracking-wide text-heritage mb-2">Contact</h3><p class="text-base"><a href="mailto:museum@uppc.co.ug" class="link-heritage">museum@uppc.co.ug</a><br>+256 414 251 267</p></div>
+          </div>
+
+          <h2 class="section-heading mb-3">Getting here</h2>
+          <p class="body-text mb-4">The museum is on the UPPC campus along Entebbe Road. Visitors should report to reception on arrival and ask for the Print Heritage Museum. Allow a few minutes for orientation before entering the galleries.</p>
+          <p class="body-text mb-6">Public transport and private vehicles both serve Entebbe Road. Parking arrangements follow campus rules; ask at the gate if you need guidance on where to leave a vehicle.</p>
+
+          <h2 class="section-heading mb-3">What to expect</h2>
+          <p class="body-text mb-4">A typical general visit includes the exhibition galleries and selected interpretive displays of machinery, type and publications. Last entry is usually 30 minutes before closing so staff can secure the spaces safely.</p>
+          <p class="body-text mb-8">Photography for personal, non-commercial use is usually allowed in gallery areas unless a label or staff member indicates otherwise. Research use of collections is arranged separately under Research Access.</p>
+
+          <div class="flex flex-wrap gap-3">
+            <button type="button" data-nav="visit-groups" class="btn-outline">Group visits</button>
+            <button type="button" data-nav="visit-access" class="btn-outline">Accessibility</button>
+            <button type="button" data-nav="contact" class="btn-primary">Contact</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="visit-groups" data-view="visit-groups">
+      <section class="section">
+        <div class="container prose-balanced">
+       
+          <h1 class="page-title">Group Visits</h1>
+          <p class="body-text mb-4">Organised groups are welcome at the UPPC Print Heritage Museum. Booking in advance lets us prepare a guided introduction, allocate gallery space and match the visit to your aims — whether classroom learning, university teaching or professional interest.</p>
+          <p class="body-text mb-8">Choose the category that best fits your group. Each section explains who it is for, what a typical visit includes, and practical notes on timing and group size.</p>
+
+          <h2 class="section-heading mb-4">Visit categories</h2>
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <div class="group-category">
+              <div class="head schools"><span class="tag">Category A</span><h3>Schools</h3></div>
+              <div class="body">
+                <p class="text-base opacity-90 leading-relaxed">Primary and secondary classes exploring how print worked, why gazettes and newspapers mattered, and how craft skills supported public communication in Uganda.</p>
+                <ul>
+                  <li>Short welcome and orientation</li>
+                  <li>Guided time in exhibition galleries</li>
+                  <li>Discussion or simple demonstration where staffing allows</li>
+                  <li>Optional link to a classroom theme you name in advance</li>
+                </ul>
+                <p class="meta">60–90 minutes · Book 2+ weeks ahead · State age range &amp; class size</p>
+              </div>
+            </div>
+            <div class="group-category">
+              <div class="head university"><span class="tag">Category B</span><h3>Universities</h3></div>
+              <div class="body">
+                <p class="text-base opacity-90 leading-relaxed">Undergraduate and postgraduate groups in history, media, design, publishing or archival studies who need collection-based teaching time.</p>
+                <ul>
+                  <li>Themed gallery introduction aligned to your course</li>
+                  <li>Option to request supervised research-room time (separate rules apply)</li>
+                  <li>Focus on primary sources, process history or exhibition interpretation</li>
+                  <li>Staff briefing for lecturers on what students may handle</li>
+                </ul>
+                <p class="meta">90–120 minutes typical · Academic contact required · Research Access for document use</p>
+              </div>
+            </div>
+            <div class="group-category">
+              <div class="head professional"><span class="tag">Category C</span><h3>Professional &amp; institutional</h3></div>
+              <div class="body">
+                <p class="text-base opacity-90 leading-relaxed">Publishers, designers, heritage practitioners, government communications teams and partner institutions seeking a structured industry or collections visit.</p>
+                <ul>
+                  <li>Focus on machinery, type, official print or conservation practice</li>
+                  <li>Conversation with staff on current exhibitions and collections priorities</li>
+                  <li>Useful for orientation, benchmarking or partnership exploration</li>
+                  <li>Can be combined with a Support or partnership discussion if requested</li>
+                </ul>
+                <p class="meta">By appointment · Weekday preferred · Outline your professional interest</p>
+              </div>
+            </div>
+            <div class="group-category">
+              <div class="head community"><span class="tag">Category D</span><h3>Community &amp; civic groups</h3></div>
+              <div class="body">
+                <p class="text-base opacity-90 leading-relaxed">Clubs, cultural associations, faith groups and civic organisations who want a general museum introduction without a formal curriculum brief.</p>
+                <ul>
+                  <li>Overview of the museum’s purpose and main galleries</li>
+                  <li>Time with current exhibitions and selected objects</li>
+                  <li>Opportunity to ask questions about Uganda’s print heritage</li>
+                  <li>Suitable for mixed-age adult groups</li>
+                </ul>
+                <p class="meta">About 60 minutes · Free entry · Advance booking recommended</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-heading mb-3">What to expect on the day</h2>
+          <p class="body-text mb-4">Groups report to UPPC campus reception and are directed to the museum. A staff member or trained guide provides a short introduction, then leads or supports movement through the agreed gallery areas. Large groups may be split so everyone can see objects and labels clearly.</p>
+          <p class="body-text mb-8">Photography for personal use is usually allowed unless a label or staff member indicates otherwise. Eating and drinking are not permitted in gallery spaces. Teachers and group leaders remain responsible for the behaviour and safety of their party throughout the visit.</p>
+
+          <h2 class="section-heading mb-3">How to book</h2>
+          <p class="body-text mb-4">Request a date at least <strong>two weeks</strong> in advance (longer in busy school terms). Email <a href="mailto:museum@uppc.co.ug?subject=Group%20Visit%20Enquiry" class="link-heritage">museum@uppc.co.ug</a> and include:</p>
+          <ul class="body-text mb-6" style="list-style:disc;padding-left:1.25rem;">
+            <li class="mb-2">Which category fits your group (A–D above)</li>
+            <li class="mb-2">Preferred date and time (and one alternative if possible)</li>
+            <li class="mb-2">Group size and age range (schools)</li>
+            <li class="mb-2">Institution or organisation name and a lead contact</li>
+            <li class="mb-2">Themes, exhibition interests or learning aims</li>
+            <li class="mb-2">Access, language or other support needs</li>
+          </ul>
+          <p class="body-text mb-8">We will confirm availability, outline the visit format and note any preparation useful before you arrive. For document or research-room use, also see <button type="button" data-nav="research" class="link-heritage">Research Access</button>.</p>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:museum@uppc.co.ug?subject=Group%20Visit%20Enquiry" class="btn-primary">Enquire about a group visit</a>
+            <button type="button" data-nav="visit" class="btn-outline">Hours &amp; Location</button>
+            <button type="button" data-nav="education" class="btn-outline">Programs</button>
+            <button type="button" data-nav="visit-access" class="btn-outline">Accessibility</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="visit-access" data-view="visit-access">
+      <section class="section">
+        <div class="container prose-balanced">
+
+          <h1 class="page-title">Accessibility</h1>
+          <p class="body-text mb-6">We aim to make the museum as welcoming as possible. Because the site is part of a working UPPC campus, facilities can vary by building area. Contacting us before your visit helps us plan support and advise on the best route into the galleries.</p>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <div class="card">
+              <h3>Mobility</h3>
+              <p class="text-base opacity-90 leading-relaxed">If you use a wheelchair or have limited mobility, please write ahead so we can advise on access routes, resting points and any steps or thresholds between campus reception and the museum spaces.</p>
+            </div>
+            <div class="card">
+              <h3>Sensory &amp; other needs</h3>
+              <p class="text-base opacity-90 leading-relaxed">Tell us about sensory preferences, communication support or other requirements. We will do our best to adjust timing, group size or interpretation within the limits of the site and collections care.</p>
+            </div>
+            <div class="card">
+              <h3>Assistance animals</h3>
+              <p class="text-base opacity-90 leading-relaxed">Assistance animals are welcome where campus policy allows. Please mention this when you contact us so reception and gallery staff are prepared.</p>
+            </div>
+            <div class="card">
+              <h3>Quiet visits</h3>
+              <p class="text-base opacity-90 leading-relaxed">If you prefer a quieter time, weekday mornings are often less busy. We can sometimes suggest quieter slots when you book in advance.</p>
+            </div>
+          </div>
+
+          <h2 class="section-heading mb-3">Contact us about access</h2>
+          <p class="body-text mb-4">Email <a href="mailto:museum@uppc.co.ug?subject=Accessibility%20Enquiry" class="link-heritage">museum@uppc.co.ug</a> or call +256 414 251 267 with the date you hope to visit and a short description of the support you need. We will respond with practical advice for your visit.</p>
+          <p class="body-text mb-8">Accessibility information is kept under review as campus facilities change. Your feedback helps us improve.</p>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:museum@uppc.co.ug?subject=Accessibility%20Enquiry" class="btn-primary">Discuss access needs</a>
+            <button type="button" data-nav="visit" class="btn-outline">Hours &amp; Location</button>
+            <button type="button" data-nav="visit-groups" class="btn-outline">Group visits</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<div class="view active" id="virtual-tour" data-view="virtual-tour">
+      <section class="section">
+        <div class="container">
+       
+          <h1 class="page-title">Virtual Tour</h1>
+
+          <div class="tour-intro">
+            <p><strong style="color:var(--archive-gold);">Welcome.</strong> This online tour introduces the ideas, machines and documents you will meet at the UPPC Print Heritage Museum — so you arrive already oriented.</p>
+            <p>Start with the interactive 3D presses, then follow the four gallery stops in order. Each stop explains what the space is about and links to deeper collection pages if you want to continue reading.</p>
+            <div class="tour-meta">
+              <span>About 10–15 minutes</span>
+              <span>Desktop or mobile</span>
+              <span>No booking required</span>
+            </div>
+          </div>
+
+          <h2 class="section-heading mb-4">How this tour works</h2>
+          <div class="tour-steps">
+            <div class="tour-step"><span class="num">1</span><h3>Inspect the machines</h3><p>Orbit and zoom the 3D presses to see frame, bed and inking parts up close.</p></div>
+            <div class="tour-step"><span class="num">2</span><h3>Walk the four stops</h3><p>Follow Press → Type → Official print → Newspapers in sequence, like a short gallery route.</p></div>
+            <div class="tour-step"><span class="num">3</span><h3>Plan your visit</h3><p>When you are ready, open Hours &amp; Location or book a group session with staff.</p></div>
+          </div>
+
+          <div class="tour-path">
+            <button type="button" onclick="document.getElementById('tour-3d')?.scrollIntoView({behavior:'smooth'})">3D studio</button>
+            <button type="button" onclick="document.getElementById('stop-1')?.scrollIntoView({behavior:'smooth'})">Stop 1 · Press</button>
+            <button type="button" onclick="document.getElementById('stop-2')?.scrollIntoView({behavior:'smooth'})">Stop 2 · Type</button>
+            <button type="button" onclick="document.getElementById('stop-3')?.scrollIntoView({behavior:'smooth'})">Stop 3 · Official print</button>
+            <button type="button" onclick="document.getElementById('stop-4')?.scrollIntoView({behavior:'smooth'})">Stop 4 · Newspapers</button>
+          </div>
+
+          <h2 id="tour-3d" class="section-heading mb-3">3D object studio</h2>
+          <p class="body-text mb-2">These models stand in for the kinds of machinery interpreted in our galleries. They are not scans of UPPC machines, but they help you understand scale and mechanism before you see the real objects on site.</p>
+          <p class="body-text mb-6"><strong>Controls:</strong> click and drag to rotate · scroll or pinch to zoom · use fullscreen for a closer look.</p>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="tour-model-card">
+              <div class="tour-embed">
+                <iframe title="3D Vandercook letterpress" src="https://sketchfab.com/models/3810f538665c4acca4007f71414efc48/embed?autostart=0&ui_infos=0&ui_controls=1" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <h3>Vandercook letterpress</h3>
+              <p class="hint">Cylinder press used for proofing and short-run work</p>
+              <p class="text-sm opacity-90 leading-relaxed">Look for the bed where the forme sits, the cylinder that carries the paper, and the overall height of the frame. Similar mechanical logic appears in production presses on the museum floor.</p>
+            </div>
+            <div class="tour-model-card">
+              <div class="tour-embed">
+                <iframe title="3D common printing press" src="https://sketchfab.com/models/d1bfc62172c2490780088019f36e329e/embed?autostart=0&ui_infos=0&ui_controls=1" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <h3>Common press</h3>
+              <p class="hint">Early wooden press tradition (Franklin-type reconstruction)</p>
+              <p class="text-sm opacity-90 leading-relaxed">Compare the upright posts and screw mechanism with later iron and steel machines. This form helps explain why early official printing was slow, skilled and specialised.</p>
+            </div>
+          </div>
+
+          <h2 class="section-heading mb-3">Guided gallery path</h2>
+          <p class="body-text mb-6">Four stops mirror the story you will encounter in the museum: how words were set, how they were printed, and how they reached the public.</p>
+
+          <div id="stop-1" class="tour-room">
+            <div class="tour-room-media"><img src="/images/reference-d3b862d1978a2513.jpg" alt="Press room atmosphere" loading="lazy" /></div>
+            <div class="body">
+              <span class="tour-stop-label">Stop 1 of 4</span>
+              <h3>The press room</h3>
+              <p class="text-base opacity-90 leading-relaxed">This is where ink, pressure and paper met. Historic and industrial presses show how official forms, newspapers and textbooks were produced at scale — and why the print room was a centre of skilled labour.</p>
+              <div class="tour-learn"><strong>What you will learn on site:</strong> how different press types changed speed and quality, and how UPPC’s production capacity supported national communication.</div>
+              <button type="button" data-nav="col-presses" class="link-heritage">Open Presses &amp; Machinery collection →</button>
+            </div>
+          </div>
+
+          <div id="stop-2" class="tour-room reverse">
+            <div class="tour-room-media"><img src="/images/reference-009cb036aa2faffc.jpg" alt="Type and composition" loading="lazy" /></div>
+            <div class="body">
+              <span class="tour-stop-label">Stop 2 of 4</span>
+              <h3>Type &amp; composition</h3>
+              <p class="text-base opacity-90 leading-relaxed">Before a page could be printed, every letter was selected and arranged. Type cases, composing sticks and matrices preserve the craft of setting the written word by hand.</p>
+              <div class="tour-learn"><strong>What you will learn on site:</strong> how compositors worked, why accuracy mattered for law and education, and how digital pre-press later transformed this skill.</div>
+              <button type="button" data-nav="col-type" class="link-heritage">Open Type &amp; Composition collection →</button>
+            </div>
+          </div>
+
+          <div id="stop-3" class="tour-room">
+            <div class="tour-room-media"><img src="/images/reference-ab4b46f78c454ab9.jpg" alt="Official publications display" loading="lazy" /></div>
+            <div class="body">
+              <span class="tour-stop-label">Stop 3 of 4</span>
+              <h3>Official publications</h3>
+              <p class="text-base opacity-90 leading-relaxed">Gazettes, notices and state stationery recorded law, administration and public information. These documents are not only archives — they are evidence of how government spoke to citizens on paper.</p>
+              <div class="tour-learn"><strong>What you will learn on site:</strong> how official print underpinned governance, and how independence-era publications appear in the current exhibition programme.</div>
+              <button type="button" data-nav="col-gazettes" class="link-heritage">Open Official Publications →</button>
+            </div>
+          </div>
+
+          <div id="stop-4" class="tour-room reverse">
+            <div class="tour-room-media"><img src="/images/reference-48e6fd3743e51eb0.jpg" alt="Newspaper heritage" loading="lazy" /></div>
+            <div class="body">
+              <span class="tour-stop-label">Stop 4 of 4</span>
+              <h3>Newspapers &amp; public culture</h3>
+              <p class="text-base opacity-90 leading-relaxed">Serial print and everyday notices shaped how people learned about national and local life. Newspapers and ephemera show print beyond the government office — in markets, schools and daily conversation.</p>
+              <div class="tour-learn"><strong>What you will learn on site:</strong> how public print culture grew alongside official production, and why fragile newsprint needs careful conservation.</div>
+              <button type="button" data-nav="collections" class="link-heritage">Browse all collections →</button>
+            </div>
+          </div>
+
+          <div class="tour-close">
+            <h2 class="section-heading mb-3">End of the online path</h2>
+            <p class="body-text mb-4">You have followed the core story of the museum: craft, production and public communication. A physical visit adds the presence of real machines, original documents and the campus setting on Entebbe Road.</p>
+            <p class="body-text mb-5">When a full on-site 3D scan of the galleries is available, it will be published on this page alongside the guided path above.</p>
+            <div class="flex flex-wrap gap-3">
+              <button type="button" data-nav="visit" class="btn-primary">Hours &amp; Location</button>
+              <button type="button" data-nav="visit-groups" class="btn-outline">Group visits</button>
+              <button type="button" data-nav="exhibitions" class="btn-outline">Current exhibitions</button>
+              <button type="button" data-nav="education" class="btn-outline">Programs</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <div class="uganda-colour-rule footer-colour-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div class="footer-col">
+          <img class="site-logo-footer" src="/images/logo.jpg" alt="UPPC Print Museum" width="220" height="72" />
+          <p class="text-sm opacity-80 leading-relaxed">The national archive of Uganda’s printing and publishing heritage.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <button type="button" data-nav="about" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">About</button>
+          <button type="button" data-nav="collections" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Collections</button>
+          <button type="button" data-nav="exhibitions" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Exhibitions</button>
+          <button type="button" data-nav="education" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Programs</button>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <button type="button" data-nav="visit" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Hours &amp; Location</button>
+          <button type="button" data-nav="research" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Research Access</button>
+          <button type="button" data-nav="support" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">Support</button>
+          <button type="button" data-nav="news" style="background:none;border:none;color:var(--archive-gold);cursor:pointer;font:inherit;padding:0;display:block;margin-bottom:0.45rem;">News</button>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:museum@uppc.co.ug">museum@uppc.co.ug</a>
+          <p>+256 414 251 267</p>
+          <p class="mt-2">UPPC Headquarters<br>Entebbe Road, Kampala</p>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-white/20 text-sm opacity-70 flex flex-col sm:flex-row sm:justify-between gap-2">
+        <span>© <span data-year></span> Uganda Printing and Publishing Corporation. All rights reserved.</span>
+        <span>Print Heritage Museum</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
