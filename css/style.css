@@ -53,3 +53,11 @@
 @media(max-width:559px){.team-card .team-photo-wrap{width:148px;height:148px}.team-featured .team-photo-wrap{width:190px;height:190px}}
 
 .page-banner-kicker{margin:0 0 .45rem;color:var(--archive-gold);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+
+
+/* Footer contact details with clear, accessible icons. */
+.footer-col .footer-contact-item{display:flex;align-items:flex-start;gap:.65rem;width:fit-content;max-width:100%;margin:0 0 .65rem;font-size:.9rem;line-height:1.55;color:inherit;text-decoration:none}
+.footer-col .footer-contact-item:hover{text-decoration:underline}
+.footer-col .footer-contact-icon{width:1.1rem;height:1.1rem;flex:0 0 1.1rem;margin-top:.12rem;opacity:.9}
+.footer-col .footer-contact-address{cursor:default}
+.footer-col .footer-contact-address:hover{text-decoration:none}
