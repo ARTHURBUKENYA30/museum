@@ -136,23 +136,53 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("contact-form");
   const contactMessage = document.getElementById("contact-message");
   if (contactForm && contactMessage) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
       event.preventDefault();
-      const name = document.getElementById("cname")?.value.trim();
-      const email = document.getElementById("cemail")?.value.trim();
-      const message = document.getElementById("cmsg")?.value.trim();
+      const name = document.getElementById("cname")?.value.trim() || "";
+      const email = document.getElementById("cemail")?.value.trim() || "";
+      const message = document.getElementById("cmsg")?.value.trim() || "";
+      const website = document.getElementById("cwebsite")?.value.trim() || "";
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton?.textContent || "Send message";
+
       contactMessage.textContent = "";
       contactMessage.className = "form-message";
-      if (!name || !email || !message) {
-        contactMessage.textContent = "Please complete all fields.";
+
+      if (name.length < 2 || name.length > 100 || !email || email.length > 254 ||
+          !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+          message.length < 10 || message.length > 5000) {
+        contactMessage.textContent = "Please enter a valid name and email, and a message of at least 10 characters.";
         contactMessage.classList.add("error-dark");
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        contactMessage.textContent = "Please enter a valid email address.";
-        contactMessage.classList.add("error-dark");
-      } else {
-        contactMessage.textContent = "Thank you. Your message has been received.";
+        return;
+      }
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending…";
+      }
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ name, email, message, website })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          throw new Error(result.error || "We could not send your message. Please try again.");
+        }
+
+        contactMessage.textContent = "Thank you. Your message has been sent to the museum.";
         contactMessage.classList.add("success-dark");
         contactForm.reset();
+      } catch (error) {
+        contactMessage.textContent = error.message || "Message could not be sent. Please email museum@uppc.go.ug directly.";
+        contactMessage.classList.add("error-dark");
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
       }
     });
   }
